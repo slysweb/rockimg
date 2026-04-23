@@ -1,0 +1,7 @@
+.svn/
+static/
+storage/
+webfonts/
+*.txt
+*.php
+
