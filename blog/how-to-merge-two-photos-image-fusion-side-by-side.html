@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to Merge Two Photos &amp; Put Images Side by Side – Image Fusion &amp; Photo Collage | ROCKIMG Blog</title>
+    <meta name="description" content="Learn image fusion for two photos: how to put two images side by side, make a side by side photo or simple two-panel photo collage online. Free Merge Two Photos tool — private, in your browser.">
+    <meta name="keywords" content="image fusion, how to put two images side by side, side by side photo, photo collage, merge two photos, combine two pictures, split photo online, diptych maker, horizontal photo merge">
+    <link rel="canonical" href="https://www.rockimg.com/blog/how-to-merge-two-photos-image-fusion-side-by-side.html">
+    <meta property="og:title" content="How to Merge Two Photos &amp; Put Images Side by Side – Image Fusion | ROCKIMG Blog">
+    <meta property="og:description" content="Put two images side by side with adjustable split — image fusion, side by side photos, and quick two-panel photo collage. Free, no upload to server.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.rockimg.com/blog/how-to-merge-two-photos-image-fusion-side-by-side.html">
+    <meta property="og:site_name" content="ROCKIMG">
+    <meta property="article:published_time" content="2026-04-23">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Merge Two Photos – Image Fusion &amp; Side by Side">
+    <meta name="twitter:description" content="Merge two photos into one horizontal image with a draggable split — perfect for comparisons, diptychs, and collage-style layouts.">
+    <link rel="stylesheet" href="/public/static/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/static/style.css?v=1">
+    <style>
+        main {
+            background-color: #fff;
+        }
+        .footer {
+            margin-top: 0;
+        }
+        .blog-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.7;
+        }
+        .blog-content h1 {
+            font-size: 2.4rem;
+            margin-bottom: 0.5rem;
+            color: #1a1a2e;
+            line-height: 1.2;
+        }
+        .blog-content h2 {
+            font-size: 1.75rem;
+            margin-top: 2.2rem;
+            margin-bottom: 0.9rem;
+            color: #0056b3;
+        }
+        .blog-content h3 {
+            font-size: 1.3rem;
+            margin-top: 1.6rem;
+            margin-bottom: 0.6rem;
+            color: #333;
+        }
+        .blog-content p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+            color: #444;
+        }
+        .blog-content ul,
+        .blog-content ol {
+            margin-bottom: 1.4rem;
+            padding-left: 1.8rem;
+        }
+        .blog-content li {
+            margin-bottom: 0.55rem;
+            font-size: 1.05rem;
+            color: #444;
+        }
+        .blog-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 1.5rem auto;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+            display: block;
+        }
+        .blog-content figure {
+            margin: 1.5rem 0;
+        }
+        .blog-content figcaption {
+            font-size: 0.9rem;
+            color: #777;
+            text-align: center;
+            margin-top: -0.5rem;
+        }
+        .publish-date {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 1.6rem;
+        }
+        .blog-content .tip {
+            background-color: #e8f4fd;
+            border-left: 4px solid #2196f3;
+            padding: 14px 16px;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .blog-content .tip p { margin: 0; font-size: 1rem; }
+        .blog-content .warning {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 14px 16px;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .blog-content .warning p { margin: 0; font-size: 1rem; }
+        .blog-content .cta {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1.6rem;
+            background: linear-gradient(135deg, #f0f8ff 0%, #e8f4fd 100%);
+            border-radius: 10px;
+            border: 1px solid #d0e8f8;
+        }
+        .blog-content .cta p {
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+            color: #333;
+        }
+        .blog-content .cta a {
+            display: inline-block;
+            padding: 11px 26px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background-color 0.25s;
+        }
+        .blog-content .cta a:hover {
+            background-color: #003d82;
+        }
+        .step-list {
+            counter-reset: step-counter;
+            list-style: none;
+            padding-left: 0;
+        }
+        .step-list li {
+            counter-increment: step-counter;
+            padding: 12px 14px 12px 52px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            position: relative;
+            font-size: 1.05rem;
+            color: #444;
+        }
+        .step-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #0056b3;
+            color: white;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+        .rules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            gap: 14px;
+            margin: 1.2rem 0 1.6rem;
+        }
+        .rule-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 16px;
+            border-top: 3px solid #0056b3;
+        }
+        .rule-card strong {
+            display: block;
+            margin-bottom: 6px;
+            color: #222;
+            font-size: 0.97rem;
+        }
+        .rule-card p {
+            font-size: 0.9rem;
+            margin: 0;
+            color: #666;
+        }
+        .breadcrumb {
+            font-size: 0.88rem;
+            color: #888;
+            margin-bottom: 1.2rem;
+        }
+        .breadcrumb a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover { text-decoration: underline; }
+        @media (max-width: 768px) {
+            .blog-content { padding: 15px; }
+            .blog-content h1 { font-size: 1.9rem; }
+            .blog-content h2 { font-size: 1.45rem; }
+            .blog-content h3 { font-size: 1.15rem; }
+            .rules-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "How to Merge Two Photos & Put Images Side by Side – Image Fusion & Photo Collage",
+      "description": "Learn image fusion for two photos: how to put two images side by side, make a side by side photo or simple two-panel photo collage online.",
+      "url": "https://www.rockimg.com/blog/how-to-merge-two-photos-image-fusion-side-by-side.html",
+      "datePublished": "2026-04-23",
+      "dateModified": "2026-04-23",
+      "author": {
+        "@type": "Organization",
+        "name": "ROCKIMG",
+        "url": "https://www.rockimg.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ROCKIMG",
+        "url": "https://www.rockimg.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.rockimg.com/public/static/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.rockimg.com/blog/how-to-merge-two-photos-image-fusion-side-by-side.html"
+      },
+      "keywords": "image fusion, side by side photo, photo collage, merge two photos"
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="/" class="logo-link">
+                    <img src="/public/static/logo.png" alt="ROCKIMG" class="logo-image" width="40" height="40" decoding="async">
+                    <span class="logo-text">ROCKIMG</span>
+                </a>
+            </div>
+            <nav class="menu">
+                <div class="menu-group">
+                    <button class="menu-item menu-trigger" type="button">
+                        Image creation
+                        <svg class="arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                            <div class="menu-dropdown">
+                                <a href="/gif-meme-maker.html" class="dropdown-item">GIF Meme Maker</a>
+                                <a href="/meme-quotes.html" class="dropdown-item">Meme Quotes Creator</a>
+                                <a href="/note-cards.html" class="dropdown-item">Note Card</a>
+                                <a href="/speech-bubble-meme.html" class="dropdown-item">Speech Bubble Meme</a>
+                                <a href="/svg-gradient-generator.html" class="dropdown-item">SVG Gradient Generator</a>
+                            </div>
+                </div>
+                <div class="menu-group">
+                    <button class="menu-item menu-trigger" type="button">
+                        Image editing
+                        <svg class="arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="menu-dropdown dropdown-wide">
+                        <a href="/add-border.html" class="dropdown-item">Add Border</a>
+                        <a href="/add-captions.html" class="dropdown-item">Add Captions</a>
+                        <a href="/add-text-to-gif.html" class="dropdown-item">Add Text to GIF</a>
+                        <a href="/annotate-image.html" class="dropdown-item">Annotate Image</a>
+                        <a href="/blur-photo.html" class="dropdown-item">Blur Photo</a>
+                        <a href="/circle-image.html" class="dropdown-item">Circle Image</a>
+                        <a href="/combine-gifs.html" class="dropdown-item">Combine GIFs</a>
+                        <a href="/exif-remover.html" class="dropdown-item">EXIF Remover</a>
+                        <a href="/gif-cropper.html" class="dropdown-item">GIF Cropper</a>
+                        <a href="/highlight-image.html" class="dropdown-item">Highlight Image</a>
+                        <a href="/image-authenticity-checker.html" class="dropdown-item">Image Authenticity Checker</a>
+                        <a href="/image-compressor.html" class="dropdown-item">Image Compressor</a>
+                        <a href="/image-file-renamer.html" class="dropdown-item">Image File Renamer</a>
+                        <a href="/image-overlay.html" class="dropdown-item">Image Overlay</a>
+                        <a href="/image-splitter.html" class="dropdown-item">Image Splitter</a>
+                        <a href="/images-combine.html" class="dropdown-item">Images Combine</a>
+                        <a href="/watermark-detector.html" class="dropdown-item">Invisible Watermark Checker</a>
+                        <a href="/merge-two-photos.html" class="dropdown-item">Merge Two Photos</a>
+                        <a href="/mirror-picture.html" class="dropdown-item">Mirror Picture</a>
+                        <a href="/photo-mosaic.html" class="dropdown-item">Photo Mosaic</a>
+                        <a href="/rounded-corners.html" class="dropdown-item">Rounded Corners</a>
+                        <a href="/stop-gif.html" class="dropdown-item">Stop GIF</a>
+                    </div>
+                </div>
+                <div class="menu-group">
+                    <button class="menu-item menu-trigger" type="button">
+                        Image conversion
+                        <svg class="arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="menu-dropdown dropdown-wide">
+                        <a href="/apng-to-gif.html" class="dropdown-item">APNG to GIF</a>
+                        <a href="/avif-converter.html" class="dropdown-item">AVIF Converter</a>
+                        <a href="/bmp-to-jpg.html" class="dropdown-item">BMP to JPG</a>
+                        <a href="/bmp-to-png.html" class="dropdown-item">BMP to PNG</a>
+                        <a href="/eps-to-jpg.html" class="dropdown-item">EPS to JPG</a>
+                        <a href="/eps-to-png.html" class="dropdown-item">EPS to PNG</a>
+                        <a href="/gif-extractor.html" class="dropdown-item">GIF Frame Extractor</a>
+                        <a href="/gif-to-apng.html" class="dropdown-item">GIF to APNG</a>
+                        <a href="/gif-to-mp4.html" class="dropdown-item">GIF to MP4</a>
+                        <a href="/gif-to-webp.html" class="dropdown-item">GIF to WebP</a>
+                        <a href="/heic-converter.html" class="dropdown-item">HEIC Converter</a>
+                        <a href="/heif-to-jpg.html" class="dropdown-item">HEIF to JPG</a>
+                        <a href="/heif-to-png.html" class="dropdown-item">HEIF to PNG</a>
+                        <a href="/jpg-to-bmp.html" class="dropdown-item">JPG to BMP</a>
+                        <a href="/jpg-to-eps.html" class="dropdown-item">JPG to EPS</a>
+                        <a href="/mov-to-gif.html" class="dropdown-item">MOV to GIF</a>
+                        <a href="/mp4-to-gif.html" class="dropdown-item">MP4 to GIF</a>
+                        <a href="/mp4-to-webp.html" class="dropdown-item">MP4 to WebP</a>
+                        <a href="/png-to-bmp.html" class="dropdown-item">PNG to BMP</a>
+                        <a href="/png-to-eps.html" class="dropdown-item">PNG to EPS</a>
+                        <a href="/tiff-to-jpg.html" class="dropdown-item">TIFF Converter</a>
+                        <a href="/video-frame.html" class="dropdown-item">Video Frame Extractor</a>
+                        <a href="/webp-converter.html" class="dropdown-item">WebP Converter</a>
+                        <a href="/webp-extractor.html" class="dropdown-item">WebP Frame Extractor</a>
+                        <a href="/webp-to-gif.html" class="dropdown-item">WebP to GIF</a>
+                        <a href="/webp-to-mp4.html" class="dropdown-item">WebP to MP4</a>
+                    </div>
+                </div>
+                <div class="menu-group menu-group-right">
+                    <button class="menu-item menu-trigger" type="button">
+                        Image color & art
+                        <svg class="arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="menu-dropdown dropdown-wide">
+                        <a href="/add-noise.html" class="dropdown-item">Add Noise</a>
+                        <a href="/ascii-to-picture.html" class="dropdown-item">ASCII to Picture</a>
+                        <a href="/beauty-filter.html" class="dropdown-item">Beauty Filter</a>
+                        <a href="/black-and-white.html" class="dropdown-item">Black and White</a>
+                        <a href="/color-blind-test.html" class="dropdown-item">Color Blind Test</a>
+                        <a href="/eye-test-chart.html" class="dropdown-item">Eye Test Chart</a>
+                        <a href="/image-color.html" class="dropdown-item">Get Image Color</a>
+                        <a href="/glitch-effect.html" class="dropdown-item">Glitch Effect</a>
+                        <a href="/image-filters.html" class="dropdown-item">Image Filters</a>
+                        <a href="/image-to-pixel-art.html" class="dropdown-item">Image to Pixel Art</a>
+                        <a href="/invert-image.html" class="dropdown-item">Invert Image</a>
+                        <a href="/picture-to-ascii.html" class="dropdown-item">Picture to ASCII</a>
+                        <a href="/pictures-to-draw.html" class="dropdown-item">Pictures to Draw</a>
+                        <a href="/vectorize-image.html" class="dropdown-item">Vectorize Image</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="location-select-container">
+                <a href="#" class="location-select" aria-label="Language">
+                    <span>Language</span>
+                    <svg class="arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <div class="location-dropdown">
+                    <a class="location-option is-active" href="/" aria-current="true">English</a>
+                    <a class="location-option" href="/de-de">Deutsch</a>
+                    <a class="location-option" href="/fr-fr">Français</a>
+                    <a class="location-option" href="/ja-jp">日本語</a>
+                    <a class="location-option" href="/zh-cn">中文</a>
+                    <a class="location-option" href="/ko-kr">한국어</a>
+                    <a class="location-option" href="/it-it">Italiano</a>
+                    <a class="location-option" href="/es-es">Español</a>
+                    <a class="location-option" href="/nl-nl">Nederlands</a>
+                </div>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="mobile-menu">
+                <div class="mobile-menu-content">
+                            <div class="mobile-menu-section">
+                                <div class="mobile-menu-title">Image creation</div>
+                                <a href="/gif-meme-maker.html" class="mobile-menu-item">GIF Meme Maker</a>
+                                <a href="/meme-quotes.html" class="mobile-menu-item">Meme Quotes Creator</a>
+                                <a href="/note-cards.html" class="mobile-menu-item">Note Card</a>
+                                <a href="/speech-bubble-meme.html" class="mobile-menu-item">Speech Bubble Meme</a>
+                                <a href="/svg-gradient-generator.html" class="mobile-menu-item">SVG Gradient Generator</a>
+                            </div>
+                    <div class="mobile-menu-section">
+                        <div class="mobile-menu-title">Image editing</div>
+                        <a href="/add-border.html" class="mobile-menu-item">Add Border</a>
+                        <a href="/add-captions.html" class="mobile-menu-item">Add Captions</a>
+                        <a href="/add-text-to-gif.html" class="mobile-menu-item">Add Text to GIF</a>
+                        <a href="/annotate-image.html" class="mobile-menu-item">Annotate Image</a>
+                        <a href="/blur-photo.html" class="mobile-menu-item">Blur Photo</a>
+                        <a href="/circle-image.html" class="mobile-menu-item">Circle Image</a>
+                        <a href="/combine-gifs.html" class="mobile-menu-item">Combine GIFs</a>
+                        <a href="/exif-remover.html" class="mobile-menu-item">EXIF Remover</a>
+                        <a href="/gif-cropper.html" class="mobile-menu-item">GIF Cropper</a>
+                        <a href="/highlight-image.html" class="mobile-menu-item">Highlight Image</a>
+                        <a href="/image-authenticity-checker.html" class="mobile-menu-item">Image Authenticity Checker</a>
+                        <a href="/image-compressor.html" class="mobile-menu-item">Image Compressor</a>
+                        <a href="/image-file-renamer.html" class="mobile-menu-item">Image File Renamer</a>
+                        <a href="/image-overlay.html" class="mobile-menu-item">Image Overlay</a>
+                        <a href="/image-splitter.html" class="mobile-menu-item">Image Splitter</a>
+                        <a href="/images-combine.html" class="mobile-menu-item">Images Combine</a>
+                        <a href="/watermark-detector.html" class="mobile-menu-item">Invisible Watermark Checker</a>
+                        <a href="/merge-two-photos.html" class="mobile-menu-item">Merge Two Photos</a>
+                        <a href="/mirror-picture.html" class="mobile-menu-item">Mirror Picture</a>
+                        <a href="/photo-mosaic.html" class="mobile-menu-item">Photo Mosaic</a>
+                        <a href="/rounded-corners.html" class="mobile-menu-item">Rounded Corners</a>
+                        <a href="/stop-gif.html" class="mobile-menu-item">Stop GIF</a>
+                    </div>
+                    <div class="mobile-menu-section">
+                        <div class="mobile-menu-title">Image conversion</div>
+                        <a href="/apng-to-gif.html" class="mobile-menu-item">APNG to GIF</a>
+                        <a href="/avif-converter.html" class="mobile-menu-item">AVIF Converter</a>
+                        <a href="/bmp-to-jpg.html" class="mobile-menu-item">BMP to JPG</a>
+                        <a href="/bmp-to-png.html" class="mobile-menu-item">BMP to PNG</a>
+                        <a href="/eps-to-jpg.html" class="mobile-menu-item">EPS to JPG</a>
+                        <a href="/eps-to-png.html" class="mobile-menu-item">EPS to PNG</a>
+                        <a href="/gif-extractor.html" class="mobile-menu-item">GIF Frame Extractor</a>
+                        <a href="/gif-to-apng.html" class="mobile-menu-item">GIF to APNG</a>
+                        <a href="/gif-to-mp4.html" class="mobile-menu-item">GIF to MP4</a>
+                        <a href="/gif-to-webp.html" class="mobile-menu-item">GIF to WebP</a>
+                        <a href="/heic-converter.html" class="mobile-menu-item">HEIC Converter</a>
+                        <a href="/heif-to-jpg.html" class="mobile-menu-item">HEIF to JPG</a>
+                        <a href="/heif-to-png.html" class="mobile-menu-item">HEIF to PNG</a>
+                        <a href="/jpg-to-bmp.html" class="mobile-menu-item">JPG to BMP</a>
+                        <a href="/jpg-to-eps.html" class="mobile-menu-item">JPG to EPS</a>
+                        <a href="/mov-to-gif.html" class="mobile-menu-item">MOV to GIF</a>
+                        <a href="/mp4-to-gif.html" class="mobile-menu-item">MP4 to GIF</a>
+                        <a href="/mp4-to-webp.html" class="mobile-menu-item">MP4 to WebP</a>
+                        <a href="/png-to-bmp.html" class="mobile-menu-item">PNG to BMP</a>
+                        <a href="/png-to-eps.html" class="mobile-menu-item">PNG to EPS</a>
+                        <a href="/tiff-to-jpg.html" class="mobile-menu-item">TIFF Converter</a>
+                        <a href="/video-frame.html" class="mobile-menu-item">Video Frame Extractor</a>
+                        <a href="/webp-converter.html" class="mobile-menu-item">WebP Converter</a>
+                        <a href="/webp-extractor.html" class="mobile-menu-item">WebP Frame Extractor</a>
+                        <a href="/webp-to-gif.html" class="mobile-menu-item">WebP to GIF</a>
+                        <a href="/webp-to-mp4.html" class="mobile-menu-item">WebP to MP4</a>
+                    </div>
+                    <div class="mobile-menu-section">
+                        <div class="mobile-menu-title">Image color & art</div>
+                        <a href="/add-noise.html" class="mobile-menu-item">Add Noise</a>
+                        <a href="/ascii-to-picture.html" class="mobile-menu-item">ASCII to Picture</a>
+                        <a href="/beauty-filter.html" class="mobile-menu-item">Beauty Filter</a>
+                        <a href="/black-and-white.html" class="mobile-menu-item">Black and White</a>
+                        <a href="/color-blind-test.html" class="mobile-menu-item">Color Blind Test</a>
+                        <a href="/eye-test-chart.html" class="mobile-menu-item">Eye Test Chart</a>
+                        <a href="/image-color.html" class="mobile-menu-item">Get Image Color</a>
+                        <a href="/glitch-effect.html" class="mobile-menu-item">Glitch Effect</a>
+                        <a href="/image-filters.html" class="mobile-menu-item">Image Filters</a>
+                        <a href="/image-to-pixel-art.html" class="mobile-menu-item">Image to Pixel Art</a>
+                        <a href="/invert-image.html" class="mobile-menu-item">Invert Image</a>
+                        <a href="/picture-to-ascii.html" class="mobile-menu-item">Picture to ASCII</a>
+                        <a href="/pictures-to-draw.html" class="mobile-menu-item">Pictures to Draw</a>
+                        <a href="/vectorize-image.html" class="mobile-menu-item">Vectorize Image</a>
+                    </div>
+                    <div class="mobile-menu-section mobile-menu-lang">
+                        <div class="mobile-menu-title">Language</div>
+                        <a class="mobile-menu-item is-active" href="/" aria-current="true">English</a>
+                        <a class="mobile-menu-item" href="/de-de">Deutsch</a>
+                        <a class="mobile-menu-item" href="/fr-fr">Français</a>
+                        <a class="mobile-menu-item" href="/ja-jp">日本語</a>
+                        <a class="mobile-menu-item" href="/zh-cn">中文</a>
+                        <a class="mobile-menu-item" href="/ko-kr">한국어</a>
+                        <a class="mobile-menu-item" href="/it-it">Italiano</a>
+                        <a class="mobile-menu-item" href="/es-es">Español</a>
+                        <a class="mobile-menu-item" href="/nl-nl">Nederlands</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <main>
+            <article class="blog-content" itemscope itemtype="https://schema.org/BlogPosting">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="/">ROCKIMG</a> &rsaquo;
+                    <a href="/blog.html">Blog</a> &rsaquo;
+                    <span>Merge Two Photos &amp; Side by Side Image Fusion</span>
+                </nav>
+
+                <h1 itemprop="headline">How to Merge Two Photos &amp; Put Images Side by Side – Image Fusion, Side by Side Photos &amp; Simple Photo Collage</h1>
+                <p class="publish-date">Published on: <time datetime="2026-04-23" itemprop="datePublished">April 23, 2026</time></p>
+
+                <p>You want a single picture that tells a story in two halves: a portrait next to a landscape, a &ldquo;before&rdquo; and &ldquo;after&rdquo;, a real photo beside a stylised version, or two product angles in one frame. In everyday language people search for <strong>how to put two images side by side</strong>, <strong>side by side photo</strong> layouts, or a quick <strong>photo collage</strong> with only two panels. In imaging terms, that is a form of <strong>image fusion</strong> at the layout level: two sources become one composite with a shared edge.</p>
+                <p>ROCKIMG's free <a href="/merge-two-photos.html"><strong>Merge Two Photos</strong></a> tool does exactly that in the browser. You upload a left image and a right image, set where the seam should sit, and export one PNG — no desktop app and no upload to a server (processing stays on your device).</p>
+
+                <div class="cta">
+                    <p>Open the tool and try a side by side merge in under a minute.</p>
+                    <a href="/merge-two-photos.html" target="_blank">Open Merge Two Photos</a>
+                </div>
+
+                <h2>What &ldquo;Image Fusion&rdquo; Means Here (and What It Does Not)</h2>
+                <p><strong>Image fusion</strong> can mean several different things. In scientific or HDR workflows it often implies pixel-level blending (for example merging exposures). This article uses the term in the broader sense many creators use when they Google it: <em>combining two images into one meaningful composite</em>.</p>
+                <p>ROCKIMG's Merge Two Photos tool performs a <strong>horizontal fusion</strong> with an adjustable split:</p>
+                <ul>
+                    <li>Both photos are scaled so their <strong>heights match</strong> (using the shorter image's height as the common canvas height).</li>
+                    <li>A <strong>split percentage</strong> (10%–90%) decides how much horizontal width comes from the <em>left</em> image versus the <em>right</em> image.</li>
+                    <li>The result is a single wide image: a classic <strong>side by side photo</strong> or two-cell <strong>photo collage</strong> layout.</li>
+                    <li>A subtle <strong>vertical guide line</strong> is drawn on the seam so you can see exactly where the two halves meet (useful for alignment and social crops).</li>
+                </ul>
+                <p>If you need stacked grids, many tiles, or overlapping layers with transparency, other workflows (or ROCKIMG's <a href="/images-combine.html">Images Combine</a> / <a href="/image-overlay.html">Image Overlay</a> tools) may fit better — more on that below.</p>
+
+                <h2>Why Create a Side by Side Photo or Two-Panel Collage?</h2>
+                <p>Putting two images side by side is one of the most universal layouts on the web. It works because viewers compare left and right automatically.</p>
+                <ul>
+                    <li><strong>Before / after</strong> — fitness, renovations, skincare, cleaning, training progress.</li>
+                    <li><strong>Comparisons</strong> — two products, two colourways, two maps, two charts as still images.</li>
+                    <li><strong>Storytelling</strong> — &ldquo;expectation vs reality&rdquo;, meme formats, reaction pairs.</li>
+                    <li><strong>Art and photography</strong> — diptychs, paired portraits, &ldquo;photo vs illustration&rdquo; experiments.</li>
+                    <li><strong>Social and messaging</strong> — one file to post or send instead of two attachments.</li>
+                </ul>
+                <p>A two-panel <strong>photo collage</strong> is often enough; you do not always need a full multi-cell template app.</p>
+
+                <h2>What the Merge Two Photos Tool Gives You</h2>
+                <p>Here is a concise map of the features you actually get on the page:</p>
+
+                <div class="rules-grid">
+                    <div class="rule-card">
+                        <strong>Left &amp; right slots</strong>
+                        <p>Clear placement for image A and image B — drag and drop or click to pick files.</p>
+                    </div>
+                    <div class="rule-card">
+                        <strong>Split position slider</strong>
+                        <p>Move the seam between 10% and 90% to favour more of the left or right picture.</p>
+                    </div>
+                    <div class="rule-card">
+                        <strong>Matched height</strong>
+                        <p>Both images scale to the same height so the seam is a straight vertical line.</p>
+                    </div>
+                    <div class="rule-card">
+                        <strong>One-shot export</strong>
+                        <p>Download a single PNG named <code>merged-photo.png</code> after you click Create.</p>
+                    </div>
+                    <div class="rule-card">
+                        <strong>Built-in samples</strong>
+                        <p>Try bundled examples (e.g. stylised blends and before/after style pairs) with one click.</p>
+                    </div>
+                    <div class="rule-card">
+                        <strong>Local processing</strong>
+                        <p>Images are handled in your browser; they are not sent to ROCKIMG for merging.</p>
+                    </div>
+                </div>
+
+                <h3>Example side by side results (tool samples)</h3>
+                <p>These are the same style of outputs you can produce with the <a href="/merge-two-photos.html">Merge Two Photos</a> workshop — a real image paired with a stylised or alternate version, and a classic before/after <strong>side by side photo</strong>:</p>
+                <figure>
+                    <img src="/public/blog/real-cartoon-merged.png" alt="Side by side merge: real photo next to stylised cartoon-style image" loading="lazy" decoding="async">
+                    <figcaption>Real photograph merged with a stylised look — a two-panel <strong>photo collage</strong> for &ldquo;photo vs illustration&rdquo; style <strong>image fusion</strong>.</figcaption>
+                </figure>
+                <figure>
+                    <img src="/public/blog/before-after-merged.jpg" alt="Before and after side by side merged into one image" loading="lazy" decoding="async">
+                    <figcaption>Before and after in a single frame — the layout people often mean when they search for <strong>how to put two images side by side</strong> for comparisons.</figcaption>
+                </figure>
+
+                <h2>Step-by-Step: How to Put Two Images Side by Side</h2>
+
+                <h3>Step 1 – Open the tool and add your images</h3>
+                <p>Go to <a href="/merge-two-photos.html">Merge Two Photos</a>. You will see two upload areas:</p>
+                <ul>
+                    <li><strong>Left image</strong> — appears on the left side of the finished <strong>side by side photo</strong>.</li>
+                    <li><strong>Right image</strong> — appears on the right side.</li>
+                </ul>
+                <p>For each slot you can either <strong>drag a file</strong> onto the dashed box or <strong>click</strong> the box to use your system's file picker. Common formats such as JPEG, PNG, WebP, and GIF (as a still) work in modern browsers as long as the file is a raster image.</p>
+
+                <div class="tip">
+                    <p><strong>Tip:</strong> For a clean <strong>photo collage</strong>, start with two images that have similar lighting or colour temperature. The seam is sharp, not blended — so mismatched white balance can draw the eye.</p>
+                </div>
+
+                <h3>Step 2 – Set the split position (the heart of the layout)</h3>
+                <p>The <strong>Split position</strong> slider shows a percentage next to it. That value controls how the horizontal space is shared between the two sources after they are height-matched:</p>
+                <ul>
+                    <li>Near <strong>50%</strong> — a balanced diptych: each side contributes roughly half of the combined width (exact proportions still depend on each photo's aspect ratio after scaling).</li>
+                    <li>Toward <strong>10%</strong> — emphasises the <em>right</em> image: the left strip is narrow.</li>
+                    <li>Toward <strong>90%</strong> — emphasises the <em>left</em> image: the right strip is narrow.</li>
+                </ul>
+                <p>If you already merged once and then move the slider, the tool can <strong>re-render</strong> the preview so you can fine-tune without re-uploading.</p>
+
+                <h3>Step 3 – Click Create</h3>
+                <p>When both slots hold an image, the <strong>Create</strong> button activates. Click it to build the composite on a canvas and show the result under the <strong>Result</strong> heading.</p>
+                <p>Expect a thin <strong>white vertical line</strong> on the boundary between the two halves. It is intentional feedback for the seam; if you need an invisible join for print, you can crop one pixel in any editor or use a tool that omits guides.</p>
+
+                <h3>Step 4 – Download</h3>
+                <p>Press <strong>Download</strong> to save <code>merged-photo.png</code>. PNG preserves sharp edges and supports lossless quality — a good default for a <strong>side by side photo</strong> that may be re-compressed by social platforms later.</p>
+
+                <h3>Step 5 – Optional: start from samples</h3>
+                <p>Scroll to the samples section on the tool page. Click a sample card to load a matched left/right pair instantly. This is the fastest way to understand how <strong>image fusion</strong> behaves with contrasting subjects (for example illustrated vs photographic looks).</p>
+
+                <h2>Practical Layout Ideas (Side by Side &amp; Collage-Style)</h2>
+
+                <h3>Before and after, same camera position</h3>
+                <p>Shoot or crop both frames with the same horizon line and focal length. The vertical seam will feel &ldquo;professional&rdquo; because the geometry lines up.</p>
+
+                <h3>Two products on white</h3>
+                <p>If both originals sit on plain backgrounds, your <strong>photo collage</strong> reads like a catalog row — excellent for marketplaces and pitch decks.</p>
+
+                <h3>Portrait + wide establishing shot</h3>
+                <p>Use the split slider to give the landscape more width (lower percentage if the landscape is on the left, or higher if it is on the right — experiment until the story feels balanced).</p>
+
+                <h3>Meme and social formats</h3>
+                <p>Many viral formats are simply two panels in one image. Merging once avoids carousel limits on some platforms and guarantees order (left always first).</p>
+
+                <h2>Merge Two Photos vs Other ROCKIMG Tools</h2>
+                <p>Choosing the right tool saves time:</p>
+                <ul>
+                    <li><strong>Merge Two Photos</strong> — exactly two sources, horizontal <strong>side by side</strong> layout, adjustable seam, PNG out.</li>
+                    <li><a href="/images-combine.html"><strong>Images Combine</strong></a> — useful when you need a different multi-image workflow (for example stacking or grids, depending on that tool's options).</li>
+                    <li><a href="/image-overlay.html"><strong>Image Overlay</strong></a> — when you need transparency, watermarks, or one picture on top of another rather than beside it.</li>
+                    <li><a href="/add-border.html"><strong>Add Border</strong></a> — after merging, add margin or a frame so the seam breathes in feeds.</li>
+                </ul>
+
+                <h2>Important Notes &amp; Limitations</h2>
+                <ul>
+                    <li><strong>Two images only.</strong> This page is purpose-built for pairs, not full multi-cell collage templates.</li>
+                    <li><strong>Export is PNG.</strong> The download uses a PNG data URL; convert to JPEG or WebP afterward if you need smaller files for email.</li>
+                    <li><strong>Seam line in the file.</strong> The preview includes a visible vertical divider at the join.</li>
+                    <li><strong>Very large files.</strong> Huge camera RAW exports may be slow or memory-heavy in the browser — consider resizing first with an <a href="/image-compressor.html">Image Compressor</a> pass if your device struggles.</li>
+                    <li><strong>Session memory.</strong> Like other client-side editors, refreshing the tab clears unsaved work — download before you close.</li>
+                </ul>
+
+                <div class="warning">
+                    <p><strong>Note:</strong> This workflow is layout fusion (stitching and cropping into one canvas), not multi-band pixel blending. For soft, graduated blending between exposures you would use dedicated HDR or exposure-fusion software.</p>
+                </div>
+
+                <h2>Frequently Asked Questions</h2>
+
+                <h3>How do I put two images side by side without Photoshop?</h3>
+                <p>Use <a href="/merge-two-photos.html">Merge Two Photos</a>: upload left and right files, adjust the split, click Create, and download <code>merged-photo.png</code>. Everything runs in the browser.</p>
+
+                <h3>Is a side by side photo the same as a photo collage?</h3>
+                <p>A <strong>photo collage</strong> usually means several photos arranged in a layout. A <strong>side by side photo</strong> is the smallest collage pattern — two cells in one row. This tool targets that pattern specifically.</p>
+
+                <h3>Does this tool do automatic face blending or HDR fusion?</h3>
+                <p>No. It performs a clear left/right composite with an adjustable vertical seam. For HDR-style <strong>image fusion</strong> you need specialised software; for simple pairing and comparison layouts, this tool is ideal.</p>
+
+                <h3>Can I merge more than two pictures?</h3>
+                <p>Not on this page — it is strictly a pair merger. Chain merges (A+B, then result+C) are possible manually but quality control is easier with a multi-image combiner such as <a href="/images-combine.html">Images Combine</a>.</p>
+
+                <h3>Will my photos be uploaded to the cloud?</h3>
+                <p>Processing is designed to stay local in the browser. You should still avoid sensitive documents on shared computers, and always follow your organisation's data rules.</p>
+
+                <h2>Conclusion</h2>
+                <p>Whether you call it <strong>image fusion</strong>, a <strong>side by side photo</strong>, or a minimal <strong>photo collage</strong>, the goal is the same: one export that carries two visual ideas in a single frame. ROCKIMG's <a href="/merge-two-photos.html">Merge Two Photos</a> keeps that workflow short — upload, slide the split, create, download — while respecting privacy by working locally in your browser.</p>
+                <p>If you compare products, document change over time, or build meme and story formats, try the built-in samples first, then drop in your own pair and nudge the percentage until the composition feels right.</p>
+
+                <div class="cta">
+                    <p>Merge your first side by side image now.</p>
+                    <a href="/merge-two-photos.html" target="_blank">Try Merge Two Photos Free</a>
+                </div>
+
+                <h2>Related Tools</h2>
+                <ul>
+                    <li><a href="/images-combine.html">Images Combine</a> — combine multiple images when you need more than two panels or a different arrangement.</li>
+                    <li><a href="/image-overlay.html">Image Overlay</a> — layer one image on another with transparency.</li>
+                    <li><a href="/add-border.html">Add Border</a> — add padding or frames around a finished composite.</li>
+                    <li><a href="/image-compressor.html">Image Compressor</a> — shrink large merges before sharing.</li>
+                </ul>
+            </article>
+        </main>
+        <footer class="footer">
+            <nav class="footer-nav">
+                <a href="/about.html">About Us</a>
+                <a href="/privacy.html" rel="nofollow">Privacy Policy</a>
+                <a href="/terms.html" rel="nofollow">Terms of Service</a>
+                <a href="/tools.html">Tools</a>
+                <a href="/blog.html">Blog</a>
+            </nav>
+            <p>&copy; 2026 ROCKIMG. All rights reserved.</p>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuBtn = document.querySelector('.mobile-menu-btn');
+                const mobileMenu = document.querySelector('.mobile-menu');
+                if (!menuBtn || !mobileMenu) return;
+                menuBtn.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+                });
+                document.addEventListener('click', function(e) {
+                    if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+                        mobileMenu.classList.remove('active');
+                        menuBtn.classList.remove('active');
+                    }
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>
