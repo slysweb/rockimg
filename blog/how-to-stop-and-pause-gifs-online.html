@@ -662,18 +662,24 @@
                 const menuBtn = document.querySelector('.mobile-menu-btn');
                 const mobileMenu = document.querySelector('.mobile-menu');
                 if (!menuBtn || !mobileMenu) return;
+                function syncMobileMenuScrollLock() {
+                    document.documentElement.classList.toggle('mobile-menu-open', mobileMenu.classList.contains('active'));
+                }
                 menuBtn.addEventListener('click', function() {
                     this.classList.toggle('active');
                     mobileMenu.classList.toggle('active');
+                    syncMobileMenuScrollLock();
                 });
                 document.addEventListener('click', function(e) {
                     if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
                         mobileMenu.classList.remove('active');
                         menuBtn.classList.remove('active');
+                        syncMobileMenuScrollLock();
                     }
                 });
             });
         </script>
     </div>
+<script defer src="/public/static/mobile-menu-accordion.js"></script>
 </body>
 </html>
