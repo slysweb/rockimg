@@ -3,19 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>How to Blur Faces in a Photo Online | Blur Photo Tool | ROCKIMG Blog</title>
-    <meta name="description" content="Learn how to blur faces in a photo and blur parts of an image for privacy. Free Blur Photo tool: drag a box, adjust strength, process in your browser, download PNG.">
-    <meta name="keywords" content="Blur Photo, blur parts of image, how to blur faces in a photo, blur face online, pixelate face, privacy blur photo, redact image online, selective blur">
-    <meta property="article:published_time" content="2026-04-19">
-    <link rel="canonical" href="https://www.rockimg.com/blog/how-to-blur-faces-in-a-photo-online.html">
-    <meta property="og:title" content="How to Blur Faces in a Photo Online | ROCKIMG Blog">
-    <meta property="og:description" content="Blur faces or any region in a photo: free online Blur Photo tool, local processing, adjustable blur strength.">
+    <title>How to Detect If an Image Has Been Manipulated | ROCKIMG Blog</title>
+    <meta name="description" content="Learn four browser-based techniques to detect manipulated images: Error Level Analysis, clone detection, noise consistency, and EXIF metadata forensics.">
+    <meta name="keywords" content="detect image manipulation,error level analysis,ELA,clone detection,noise consistency,image forensics,EXIF metadata,fake photo detection">
+    <meta property="article:published_time" content="2026-07-22">
+    <meta property="og:image" content="https://www.rockimg.com/public/static/samples/detect-image-manipulation-ela.png">
+    <meta name="twitter:image" content="https://www.rockimg.com/public/static/samples/detect-image-manipulation-ela.png">
+    <link rel="canonical" href="https://www.rockimg.com/blog/how-to-detect-if-an-image-has-been-manipulated.html">
+    <meta property="og:title" content="How to Detect If an Image Has Been Manipulated | ROCKIMG Blog">
+    <meta property="og:description" content="Four forensic techniques—ELA, clone detection, noise analysis, and metadata—to spot edited or composited photos in your browser.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://www.rockimg.com/blog/how-to-blur-faces-in-a-photo-online.html">
+    <meta property="og:url" content="https://www.rockimg.com/blog/how-to-detect-if-an-image-has-been-manipulated.html">
     <meta property="og:site_name" content="ROCKIMG">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="How to Blur Faces in a Photo Online">
-    <meta name="twitter:description" content="Step-by-step: blur faces or sensitive areas with the free Blur Photo tool — no upload to servers.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Detect If an Image Has Been Manipulated">
+    <meta name="twitter:description" content="ELA, clone detection, noise consistency, and EXIF checks—practical image forensics that run in the browser.">
     <link rel="stylesheet" href="/public/static/all.min.css">
     <link rel="stylesheet" type="text/css" href="/public/static/style.css?v=1">
     <style>
@@ -266,11 +268,12 @@
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
-      "headline": "How to Blur Faces in a Photo Online",
-      "description": "Learn how to blur faces in a photo and blur parts of an image for privacy using the free Blur Photo tool in your browser.",
-      "url": "https://www.rockimg.com/blog/how-to-blur-faces-in-a-photo-online.html",
-      "datePublished": "2026-04-19",
-      "dateModified": "2026-04-19",
+      "headline": "How to Detect If an Image Has Been Manipulated",
+      "description": "Guide to detecting manipulated images with Error Level Analysis, clone detection, noise consistency analysis, and EXIF metadata forensics.",
+      "image": "https://www.rockimg.com/public/static/samples/detect-image-manipulation-ela.png",
+      "url": "https://www.rockimg.com/blog/how-to-detect-if-an-image-has-been-manipulated.html",
+      "datePublished": "2026-07-22",
+      "dateModified": "2026-07-22",
       "author": {
         "@type": "Organization",
         "name": "ROCKIMG",
@@ -287,9 +290,9 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.rockimg.com/blog/how-to-blur-faces-in-a-photo-online.html"
+        "@id": "https://www.rockimg.com/blog/how-to-detect-if-an-image-has-been-manipulated.html"
       },
-      "keywords": "Blur Photo, blur parts of image, how to blur faces in a photo"
+      "keywords": "detect image manipulation, error level analysis, clone detection, image forensics"
     }
     </script>
 </head>
@@ -579,62 +582,47 @@
                 <nav class="breadcrumb" aria-label="Breadcrumb">
                     <a href="/">ROCKIMG</a> &rsaquo;
                     <a href="/blog.html">Blog</a> &rsaquo;
-                    <span>How to Blur Faces in a Photo Online</span>
+                    <span>How to Detect If an Image Has Been Manipulated</span>
                 </nav>
-<h1>How to Blur Faces in a Photo Online</h1>
-<p>Whether you need to protect someone’s privacy, hide a license plate, or soften a distracting detail, learning <strong>how to blur faces in a photo</strong> is one of the fastest ways to share images safely. With ROCKIMG’s <strong>Blur Photo</strong> tool, you can <strong>blur parts of an image</strong> selectively—only the region you choose gets blurred, and the rest of the picture stays sharp.</p>
-<p class="publish-date">Published on: Apr 19, 2026</p>
+<h1>How to Detect If an Image Has Been Manipulated</h1>
+<p>A photo lands in your inbox, your feed, or a customer dispute. Something feels off, but you cannot point to a specific pixel. The good news: manipulated images leave forensic traces that software can measure, even when the edit is invisible to the naked eye. Four techniques cover the vast majority of cases, and all four can run in a browser without installing anything.</p>
+<p class="publish-date">Published on: July 22, 2026</p>
 
-<div class="cta">
-    <p>Open the free Blur Photo tool.</p>
-    <a href="/blur-photo.html" target="_blank" rel="noopener">Try Blur Photo</a>
-</div>
+<figure>
+    <img src="/public/static/samples/detect-image-manipulation-ela.png" alt="Side-by-side photo and Error Level Analysis heat map highlighting regions that may have been pasted or re-compressed" width="1536" height="1024" loading="lazy">
+    <figcaption>ELA-style heat map: brighter patches often mark regions with a different JPEG compression history than the rest of the frame.</figcaption>
+</figure>
 
-<h2>Why blur faces or regions?</h2>
-<p>Group photos, screenshots, street photography, and event pictures often include people or identifiers you do not want to publish. Blurring a face or a small area reduces the chance of accidental doxxing or consent issues. It is also useful for hiding house numbers, ID fragments, or on-screen emails—any time you need a quick redaction without learning desktop software.</p>
+<h2>Error Level Analysis: Reading the Compression History</h2>
+<p>Every time a JPEG is saved, the encoder cuts the image into 8x8 pixel blocks, transforms each block into frequency values, divides those values by a quality table, and rounds. That rounding is permanent. In an untouched photo, every region has been through this process the same number of times at the same settings, so the entire frame settles at a similar error level.</p>
+<p>Paste something into that photo and save again, and the pasted region carries a different compression history. An ELA tool re-compresses the image at a known quality and maps the difference between the original and the re-saved version. Regions that glow brighter than their surroundings have been through fewer rounds of compression, or different settings, than the rest of the frame.</p>
+<p>A few things to keep in mind. Texture and contrast shift error levels on their own. A bright sky next to a detailed tree line will always show different ELA values, even in an untouched photo. ELA on a PNG or a fresh maximum-quality export will look bright everywhere, because there is almost no compression history to compare against. Treat ELA as a reason to investigate further, not as proof.</p>
+<p>For a detailed walkthrough of the mechanics behind JPEG quantization, 8x8 blocking, and why edited regions end up with mismatched compression signatures, see <a href="https://fakeimagedetector.com/blog/how-jpeg-compression-works/" target="_blank" rel="noopener noreferrer">how JPEG compression betrays edited photos</a>.</p>
 
-<h2>What the Blur Photo tool does</h2>
-<p>The <a href="/blur-photo.html">Blur Photo</a> editor runs in your browser: you upload a picture, draw a rectangle over the area to obscure, set <strong>blur intensity</strong> with the slider, then apply and download the result. Processing uses your device, which helps keep routine privacy edits off a remote server. Supported uploads are standard image types up to 20&nbsp;MB per file.</p>
-<ul>
-    <li><strong>Selective blur</strong> — blur only inside your box; the rest of the image is unchanged.</li>
-    <li><strong>Adjustable strength</strong> — slider from light to strong blur before you apply.</li>
-    <li><strong>Simple workflow</strong> — drag-and-drop or click to upload, draw the region, create, download.</li>
-    <li><strong>Local processing</strong> — handy when you prefer not to upload sensitive photos.</li>
-</ul>
+<h2>Clone Detection: Finding Copy-Pasted Regions</h2>
+<p>A common manipulation technique is copying one part of an image and pasting it over another to hide or duplicate an object. Clone detection algorithms divide the image into overlapping blocks, compute a fingerprint for each block, and then sort those fingerprints to find near-identical matches in different parts of the frame.</p>
+<p>When two distant regions share the same block fingerprint, the tool flags them. This catches duplicated textures, repeated patterns used to cover up removed objects, and stamp-cloned areas.</p>
+<p>The limitation: large uniform areas (clear skies, white walls, solid backgrounds) will produce matching blocks by nature. Clone detection works best on images with varied texture and detail, where a genuine duplicate stands out from the surrounding content.</p>
 
-<h2>Step-by-step: blur faces in a photo</h2>
+<h2>Noise Consistency Analysis: Spotting Composites</h2>
+<p>Every camera sensor produces a characteristic noise pattern. The grain in a photo taken with a phone at ISO 800 looks different from the grain in a studio shot at ISO 100. When someone composites elements from two different source images, the noise profile changes at the boundary.</p>
+<p>A noise consistency map divides the image into regions and measures the statistical distribution of noise in each one. Regions that were shot under different conditions, or generated synthetically, show up as patches with different noise characteristics.</p>
+<p>A related technique, noise naturalness mapping, measures the kurtosis (the "peakedness") of the noise distribution. Real camera noise tends to follow specific statistical patterns. AI-generated images often produce noise with lower kurtosis values, which a naturalness map renders in red, while regions matching natural photo statistics appear green.</p>
 
-<h3>Step 1: Upload your image</h3>
-<p>Go to <a href="/blur-photo.html">blur-photo.html</a> and drop your file onto the upload area, or click to pick a file from your computer.</p>
+<h2>Metadata Forensics: What the File Header Reveals</h2>
+<p>Before touching any pixels, check the file's EXIF metadata. A photo straight from a camera typically includes the camera make and model, lens information, shutter speed, aperture, ISO, GPS coordinates, and a timestamp. Software like Photoshop, GIMP, or Lightroom writes its own signature into the metadata when it saves a file.</p>
+<p>A photo that claims to be an unedited original but carries an Adobe Photoshop software tag has been through an editor. A file with no EXIF data at all may have been stripped intentionally (which is common for privacy reasons, and tools like browser-based EXIF removers exist for exactly this purpose). Missing metadata is not evidence of tampering on its own, but combined with suspicious ELA or noise results, it adds weight.</p>
+<p>GPS coordinates, when present, can confirm or contradict a photo's claimed location. Timestamps can reveal whether a photo was taken when it claims to have been taken. These are straightforward checks, but they catch a surprising number of fakes that went unexamined.</p>
 
-<h3>Step 2: Draw a box over the face (or any part)</h3>
-<p>After the preview loads, click and drag on the image to draw a rectangle. Position it over the face, license plate, or other sensitive detail. You can redraw the box by dragging again until the framing looks right.</p>
+<h2>Putting the Four Techniques Together</h2>
+<p>No single technique is conclusive on its own. ELA can flag false positives from normal contrast differences. Clone detection trips on uniform textures. Noise analysis needs enough resolution to measure meaningfully. Metadata can be stripped or spoofed.</p>
+<p>The power comes from combining them. An image where ELA highlights a suspicious region, clone detection finds duplicated blocks in the same area, the noise map shows a different grain pattern there, and the metadata carries an editing software signature, that image warrants serious scrutiny.</p>
+<p>Browser-based tools that run all four analyses on a single upload make this practical for anyone, not just forensic specialists. The analysis runs locally in JavaScript and the HTML5 Canvas API, so your image never leaves your machine. Drag in a JPG, PNG, WebP, or BMP, wait a few seconds, and review each tab.</p>
 
-<h3>Step 3: Set blur intensity</h3>
-<p>Use the blur slider to choose how strong the effect should be. Stronger values make identification harder but look more obvious; lighter values look more natural—pick what fits your use case.</p>
+<h2>When to Go Deeper</h2>
+<p>Browser-based forensic tools cover the common cases well: detecting spliced regions, finding clone stamps, spotting composites from different sources, and reading metadata. For images where AI generation is the concern rather than manual editing, dedicated detection tools add machine-learning classifiers trained specifically on synthetic image artifacts, along with checks for invisible watermarks and provenance signals like C2PA Content Credentials.</p>
+<p>The practical workflow: start with the four-layer analysis described above. If the results are inconclusive or if you suspect AI generation specifically, move to a specialized scanner that adds deep-learning classification on top of the traditional forensic layers. Most manipulation that matters in day-to-day work (retouched product photos, altered screenshots, composited scenes) will surface in the first pass.</p>
 
-<h3>Step 4: Apply and download</h3>
-<p>Click the main action button to apply blur to the selected region. When the result appears, download your image. The output is suitable for sharing in reports, social posts, or documentation.</p>
-
-<div class="tip">
-    <p><strong>Multiple faces:</strong> The tool applies one rectangular region per run. To <strong>blur parts of an image</strong> in several places, blur the first area, download, then upload that exported image and repeat for the next face or object.</p>
-</div>
-
-<h2>Tips for better results</h2>
-<ul>
-    <li>Include a little padding around a face so hairlines and jaw edges do not “leak” recognizable detail.</li>
-    <li>For text or small symbols, a tighter box plus a higher blur strength usually reads as a cleaner redaction.</li>
-    <li>Keep a copy of the original in a private folder if you might need the unedited photo later.</li>
-    <li>Blur is a visual deterrent, not a cryptographic guarantee—treat it as practical privacy hygiene for everyday sharing.</li>
-</ul>
-
-<h2>Conclusion</h2>
-<p>Knowing <strong>how to blur faces in a photo</strong> helps you share images responsibly. ROCKIMG’s <strong>Blur Photo</strong> tool makes it easy to <strong>blur parts of an image</strong> in a few clicks, with control over strength and no extra software to install.</p>
-
-<div class="cta">
-    <p>Blur a photo now.</p>
-    <a href="/blur-photo.html" target="_blank" rel="noopener">Open Blur Photo</a>
-</div>
 <p class="back-to-blog" style="margin-top:2.5rem;"><a href="/blog.html">← Back to all tutorials</a></p>
             </article>
         </main>

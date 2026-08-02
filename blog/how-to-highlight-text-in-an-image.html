@@ -16,6 +16,8 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="How to Highlight Text in an Image Online">
     <meta name="twitter:description" content="Mark important text in screenshots and images—free Highlight Image tool at highlight-image.html, no server upload.">
+    <link rel="stylesheet" href="/public/static/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/static/style.css?v=1">
     <style>
         main {
             background-color: #fff;
@@ -290,61 +292,312 @@
       "keywords": "highlight text in image, highlight parts of image, screenshot highlight, highlight image tool"
     }
     </script>
-
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            background: #fff;
-            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-        }
-        main {
-            background-color: #fff;
-            padding: 12px 0 40px;
-        }
-        .blog-breadcrumb,
-        .breadcrumb {
-            font-size: 0.9rem;
-            color: #6b7280;
-            margin-bottom: 1rem;
-        }
-        .blog-breadcrumb a,
-        .breadcrumb a {
-            color: #4a90e2;
-            text-decoration: none;
-        }
-        .blog-breadcrumb a:hover,
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-    </style>
-
 </head>
 <body>
-    <main>
-        <article class="blog-content" itemscope itemtype="https://schema.org/BlogPosting">
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="/" class="logo-link">
+                    <img src="/public/static/logo.svg" alt="ROCKIMG" class="logo-image" width="150" height="25" decoding="async">
+                </a>
+            </div>
+            <nav class="menu">
+                <div class="menu-group">
+                    <button class="menu-item menu-trigger" type="button">
+                        Image creation
+                        <svg class="arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                            <div class="menu-dropdown">
+                                <a href="/gif-meme-maker.html" class="dropdown-item">GIF Meme Maker</a>
+                                <a href="/meme-quotes.html" class="dropdown-item">Meme Quotes Creator</a>
+                                <a href="/note-cards.html" class="dropdown-item">Note Card</a>
+                                <a href="/speech-bubble-meme.html" class="dropdown-item">Speech Bubble Meme</a>
+                                <a href="/svg-gradient-generator.html" class="dropdown-item">SVG Gradient Generator</a>
+                                <a href="/emoji-combo.html" class="dropdown-item">Emoji Combo</a>
+                            </div>
+                </div>
+                <div class="menu-group">
+                    <button class="menu-item menu-trigger" type="button">
+                        Image editing
+                        <svg class="arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="menu-dropdown dropdown-wide">
+                        <a href="/add-border.html" class="dropdown-item">Add Border</a>
+                        <a href="/add-captions.html" class="dropdown-item">Add Captions</a>
+                        <a href="/add-text-to-gif.html" class="dropdown-item">Add Text to GIF</a>
+                        <a href="/annotate-image.html" class="dropdown-item">Annotate Image</a>
+                        <a href="/blur-photo.html" class="dropdown-item">Blur Photo</a>
+                        <a href="/circle-image.html" class="dropdown-item">Circle Image</a>
+                        <a href="/combine-gifs.html" class="dropdown-item">Combine GIFs</a>
+                        <a href="/exif-remover.html" class="dropdown-item">EXIF Remover</a>
+                        <a href="/gif-cropper.html" class="dropdown-item">GIF Cropper</a>
+                        <a href="/highlight-image.html" class="dropdown-item">Highlight Image</a>
+                        <a href="/image-authenticity-checker.html" class="dropdown-item">Image Authenticity Checker</a>
+                        <a href="/image-compressor.html" class="dropdown-item">Image Compressor</a>
+                        <a href="/image-file-renamer.html" class="dropdown-item">Image File Renamer</a>
+                        <a href="/image-overlay.html" class="dropdown-item">Image Overlay</a>
+                        <a href="/image-splitter.html" class="dropdown-item">Image Splitter</a>
+                        <a href="/images-combine.html" class="dropdown-item">Images Combine</a>
+                        <a href="/watermark-detector.html" class="dropdown-item">Invisible Watermark Checker</a>
+                        <a href="/merge-two-photos.html" class="dropdown-item">Merge Two Photos</a>
+                        <a href="/mirror-picture.html" class="dropdown-item">Mirror Picture</a>
+                        <a href="/water-reflection-generator.html" class="dropdown-item">Water Reflection Generator</a>
+                        <a href="/photo-mosaic.html" class="dropdown-item">Photo Mosaic</a>
+                        <a href="/rounded-corners.html" class="dropdown-item">Rounded Corners</a>
+                        <a href="/stop-gif.html" class="dropdown-item">Stop GIF</a>
+                    </div>
+                </div>
+                <div class="menu-group">
+                    <button class="menu-item menu-trigger" type="button">
+                        Image conversion
+                        <svg class="arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="menu-dropdown dropdown-wide">
+                        <a href="/apng-to-gif.html" class="dropdown-item">APNG to GIF</a>
+                        <a href="/avif-converter.html" class="dropdown-item">AVIF Converter</a>
+                        <a href="/bmp-to-jpg.html" class="dropdown-item">BMP to JPG</a>
+                        <a href="/bmp-to-png.html" class="dropdown-item">BMP to PNG</a>
+                        <a href="/eps-to-jpg.html" class="dropdown-item">EPS to JPG</a>
+                        <a href="/eps-to-png.html" class="dropdown-item">EPS to PNG</a>
+                        <a href="/gif-extractor.html" class="dropdown-item">GIF Frame Extractor</a>
+                        <a href="/gif-to-apng.html" class="dropdown-item">GIF to APNG</a>
+                        <a href="/gif-to-mp4.html" class="dropdown-item">GIF to MP4</a>
+                        <a href="/gif-to-livp.html" class="dropdown-item">GIF to Live Photo</a>
+                        <a href="/gif-to-webp.html" class="dropdown-item">GIF to WebP</a>
+                        <a href="/livp-to-photo.html" class="dropdown-item">Live Photo to Photo</a>
+                        <a href="/livp-to-gif.html" class="dropdown-item">Live Photo to GIF</a>
+                        <a href="/heic-converter.html" class="dropdown-item">HEIC Converter</a>
+                        <a href="/heif-to-jpg.html" class="dropdown-item">HEIF to JPG</a>
+                        <a href="/heif-to-png.html" class="dropdown-item">HEIF to PNG</a>
+                        <a href="/jpg-to-bmp.html" class="dropdown-item">JPG to BMP</a>
+                        <a href="/jpg-to-eps.html" class="dropdown-item">JPG to EPS</a>
+                        <a href="/mov-to-gif.html" class="dropdown-item">MOV to GIF</a>
+                        <a href="/mp4-to-gif.html" class="dropdown-item">MP4 to GIF</a>
+                        <a href="/mp4-to-webp.html" class="dropdown-item">MP4 to WebP</a>
+                        <a href="/mp3-album-cover.html" class="dropdown-item">MP3 Album Cover (Add)</a>
+                        <a href="/mp3-cover-extract.html" class="dropdown-item">MP3 Cover Extract</a>
+                        <a href="/png-to-bmp.html" class="dropdown-item">PNG to BMP</a>
+                        <a href="/png-to-eps.html" class="dropdown-item">PNG to EPS</a>
+                        <a href="/tiff-to-jpg.html" class="dropdown-item">TIFF Converter</a>
+                        <a href="/video-frame.html" class="dropdown-item">Video Frame Extractor</a>
+                        <a href="/webp-converter.html" class="dropdown-item">WebP Converter</a>
+                        <a href="/webp-extractor.html" class="dropdown-item">WebP Frame Extractor</a>
+                        <a href="/webp-to-gif.html" class="dropdown-item">WebP to GIF</a>
+                        <a href="/webp-to-mp4.html" class="dropdown-item">WebP to MP4</a>
+                    </div>
+                </div>
+                <div class="menu-group menu-group-right">
+                    <button class="menu-item menu-trigger" type="button">
+                        Image color & art
+                        <svg class="arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="menu-dropdown dropdown-wide">
+                        <a href="/add-noise.html" class="dropdown-item">Add Noise</a>
+                        <a href="/ascii-to-picture.html" class="dropdown-item">ASCII to Picture</a>
+                        <a href="/beauty-filter.html" class="dropdown-item">Beauty Filter</a>
+                        <a href="/black-and-white.html" class="dropdown-item">Black and White</a>
+                        <a href="/ccd-style.html" class="dropdown-item">CCD Style</a>
+                        <a href="/rubbing-effect.html" class="dropdown-item">Rubbing Effect</a>
+                        <a href="/color-blind-test.html" class="dropdown-item">Color Blind Test</a>
+                        <a href="/color-blindness-simulator.html" class="dropdown-item">Color Blindness Simulator</a>
+                        <a href="/eye-test-chart.html" class="dropdown-item">Eye Test Chart</a>
+                        <a href="/image-color.html" class="dropdown-item">Get Image Color</a>
+                        <a href="/image-coords.html" class="dropdown-item">Image Coordinate Picker</a>
+                        <a href="/glitch-effect.html" class="dropdown-item">Glitch Effect</a>
+                        <a href="/optical-illusion-generator.html" class="dropdown-item">Optical Illusion Generator</a>
+                        <a href="/motion-aftereffect-generator.html" class="dropdown-item">Motion Aftereffect Generator</a>
+                        <a href="/image-filters.html" class="dropdown-item">Image Filters</a>
+                        <a href="/image-to-pixel-art.html" class="dropdown-item">Image to Pixel Art</a>
+                        <a href="/low-quality-image-maker.html" class="dropdown-item">Low Quality Image Maker</a>
+                        <a href="/perler-bead-pattern-maker.html" class="dropdown-item">Perler Bead Pattern Maker</a>
+                        <a href="/invert-image.html" class="dropdown-item">Invert Image</a>
+                        <a href="/picture-to-ascii.html" class="dropdown-item">Picture to ASCII</a>
+                        <a href="/pictures-to-draw.html" class="dropdown-item">Pictures to Draw</a>
+                        <a href="/vectorize-image.html" class="dropdown-item">Vectorize Image</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="location-select-container">
+                <a href="#" class="location-select" aria-label="Language">
+                    <span>Language</span>
+                    <svg class="arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <div class="location-dropdown">
+                    <a class="location-option is-active" href="/" aria-current="true">English</a>
+                    <a class="location-option" href="/de-de">Deutsch</a>
+                    <a class="location-option" href="/fr-fr">Français</a>
+                    <a class="location-option" href="/ja-jp">日本語</a>
+                    <a class="location-option" href="/zh-cn">中文</a>
+                    <a class="location-option" href="/ko-kr">한국어</a>
+                    <a class="location-option" href="/it-it">Italiano</a>
+                    <a class="location-option" href="/es-es">Español</a>
+                    <a class="location-option" href="/nl-nl">Nederlands</a>
+                    <a class="location-option" href="/ru-ru">Русский</a>
+                </div>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="mobile-menu">
+                <div class="mobile-menu-content">
+                    <div class="mobile-menu-section">
+                        <button type="button" class="mobile-menu-title" aria-expanded="false">Image creation</button>
+                        <div class="mobile-menu-items">
+                                <a href="/gif-meme-maker.html" class="mobile-menu-item">GIF Meme Maker</a>
+                                <a href="/meme-quotes.html" class="mobile-menu-item">Meme Quotes Creator</a>
+                                <a href="/note-cards.html" class="mobile-menu-item">Note Card</a>
+                                <a href="/speech-bubble-meme.html" class="mobile-menu-item">Speech Bubble Meme</a>
+                                <a href="/svg-gradient-generator.html" class="mobile-menu-item">SVG Gradient Generator</a>
+                                <a href="/emoji-combo.html" class="mobile-menu-item">Emoji Combo</a>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-section">
+                        <button type="button" class="mobile-menu-title" aria-expanded="false">Image editing</button>
+                        <div class="mobile-menu-items">
+                        <a href="/add-border.html" class="mobile-menu-item">Add Border</a>
+                        <a href="/add-captions.html" class="mobile-menu-item">Add Captions</a>
+                        <a href="/add-text-to-gif.html" class="mobile-menu-item">Add Text to GIF</a>
+                        <a href="/annotate-image.html" class="mobile-menu-item">Annotate Image</a>
+                        <a href="/blur-photo.html" class="mobile-menu-item">Blur Photo</a>
+                        <a href="/circle-image.html" class="mobile-menu-item">Circle Image</a>
+                        <a href="/combine-gifs.html" class="mobile-menu-item">Combine GIFs</a>
+                        <a href="/exif-remover.html" class="mobile-menu-item">EXIF Remover</a>
+                        <a href="/gif-cropper.html" class="mobile-menu-item">GIF Cropper</a>
+                        <a href="/highlight-image.html" class="mobile-menu-item">Highlight Image</a>
+                        <a href="/image-authenticity-checker.html" class="mobile-menu-item">Image Authenticity Checker</a>
+                        <a href="/image-compressor.html" class="mobile-menu-item">Image Compressor</a>
+                        <a href="/image-file-renamer.html" class="mobile-menu-item">Image File Renamer</a>
+                        <a href="/image-overlay.html" class="mobile-menu-item">Image Overlay</a>
+                        <a href="/image-splitter.html" class="mobile-menu-item">Image Splitter</a>
+                        <a href="/images-combine.html" class="mobile-menu-item">Images Combine</a>
+                        <a href="/watermark-detector.html" class="mobile-menu-item">Invisible Watermark Checker</a>
+                        <a href="/merge-two-photos.html" class="mobile-menu-item">Merge Two Photos</a>
+                        <a href="/mirror-picture.html" class="mobile-menu-item">Mirror Picture</a>
+                        <a href="/water-reflection-generator.html" class="mobile-menu-item">Water Reflection Generator</a>
+                        <a href="/photo-mosaic.html" class="mobile-menu-item">Photo Mosaic</a>
+                        <a href="/rounded-corners.html" class="mobile-menu-item">Rounded Corners</a>
+                        <a href="/stop-gif.html" class="mobile-menu-item">Stop GIF</a>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-section">
+                        <button type="button" class="mobile-menu-title" aria-expanded="false">Image conversion</button>
+                        <div class="mobile-menu-items">
+                        <a href="/apng-to-gif.html" class="mobile-menu-item">APNG to GIF</a>
+                        <a href="/avif-converter.html" class="mobile-menu-item">AVIF Converter</a>
+                        <a href="/bmp-to-jpg.html" class="mobile-menu-item">BMP to JPG</a>
+                        <a href="/bmp-to-png.html" class="mobile-menu-item">BMP to PNG</a>
+                        <a href="/eps-to-jpg.html" class="mobile-menu-item">EPS to JPG</a>
+                        <a href="/eps-to-png.html" class="mobile-menu-item">EPS to PNG</a>
+                        <a href="/gif-extractor.html" class="mobile-menu-item">GIF Frame Extractor</a>
+                        <a href="/gif-to-apng.html" class="mobile-menu-item">GIF to APNG</a>
+                        <a href="/gif-to-mp4.html" class="mobile-menu-item">GIF to MP4</a>
+                        <a href="/gif-to-livp.html" class="mobile-menu-item">GIF to Live Photo</a>
+                        <a href="/gif-to-webp.html" class="mobile-menu-item">GIF to WebP</a>
+                        <a href="/livp-to-photo.html" class="mobile-menu-item">Live Photo to Photo</a>
+                        <a href="/livp-to-gif.html" class="mobile-menu-item">Live Photo to GIF</a>
+                        <a href="/heic-converter.html" class="mobile-menu-item">HEIC Converter</a>
+                        <a href="/heif-to-jpg.html" class="mobile-menu-item">HEIF to JPG</a>
+                        <a href="/heif-to-png.html" class="mobile-menu-item">HEIF to PNG</a>
+                        <a href="/jpg-to-bmp.html" class="mobile-menu-item">JPG to BMP</a>
+                        <a href="/jpg-to-eps.html" class="mobile-menu-item">JPG to EPS</a>
+                        <a href="/mov-to-gif.html" class="mobile-menu-item">MOV to GIF</a>
+                        <a href="/mp4-to-gif.html" class="mobile-menu-item">MP4 to GIF</a>
+                        <a href="/mp4-to-webp.html" class="mobile-menu-item">MP4 to WebP</a>
+                        <a href="/mp3-album-cover.html" class="mobile-menu-item">MP3 Album Cover (Add)</a>
+                        <a href="/mp3-cover-extract.html" class="mobile-menu-item">MP3 Cover Extract</a>
+                        <a href="/png-to-bmp.html" class="mobile-menu-item">PNG to BMP</a>
+                        <a href="/png-to-eps.html" class="mobile-menu-item">PNG to EPS</a>
+                        <a href="/tiff-to-jpg.html" class="mobile-menu-item">TIFF Converter</a>
+                        <a href="/video-frame.html" class="mobile-menu-item">Video Frame Extractor</a>
+                        <a href="/webp-converter.html" class="mobile-menu-item">WebP Converter</a>
+                        <a href="/webp-extractor.html" class="mobile-menu-item">WebP Frame Extractor</a>
+                        <a href="/webp-to-gif.html" class="mobile-menu-item">WebP to GIF</a>
+                        <a href="/webp-to-mp4.html" class="mobile-menu-item">WebP to MP4</a>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-section">
+                        <button type="button" class="mobile-menu-title" aria-expanded="false">Image color & art</button>
+                        <div class="mobile-menu-items">
+                        <a href="/add-noise.html" class="mobile-menu-item">Add Noise</a>
+                        <a href="/ascii-to-picture.html" class="mobile-menu-item">ASCII to Picture</a>
+                        <a href="/beauty-filter.html" class="mobile-menu-item">Beauty Filter</a>
+                        <a href="/black-and-white.html" class="mobile-menu-item">Black and White</a>
+                        <a href="/ccd-style.html" class="mobile-menu-item">CCD Style</a>
+                        <a href="/rubbing-effect.html" class="mobile-menu-item">Rubbing Effect</a>
+                        <a href="/color-blind-test.html" class="mobile-menu-item">Color Blind Test</a>
+                        <a href="/color-blindness-simulator.html" class="mobile-menu-item">Color Blindness Simulator</a>
+                        <a href="/eye-test-chart.html" class="mobile-menu-item">Eye Test Chart</a>
+                        <a href="/image-color.html" class="mobile-menu-item">Get Image Color</a>
+                        <a href="/image-coords.html" class="mobile-menu-item">Image Coordinate Picker</a>
+                        <a href="/glitch-effect.html" class="mobile-menu-item">Glitch Effect</a>
+                        <a href="/optical-illusion-generator.html" class="mobile-menu-item">Optical Illusion Generator</a>
+                        <a href="/motion-aftereffect-generator.html" class="mobile-menu-item">Motion Aftereffect Generator</a>
+                        <a href="/image-filters.html" class="mobile-menu-item">Image Filters</a>
+                        <a href="/image-to-pixel-art.html" class="mobile-menu-item">Image to Pixel Art</a>
+                        <a href="/low-quality-image-maker.html" class="mobile-menu-item">Low Quality Image Maker</a>
+                        <a href="/perler-bead-pattern-maker.html" class="mobile-menu-item">Perler Bead Pattern Maker</a>
+                        <a href="/invert-image.html" class="mobile-menu-item">Invert Image</a>
+                        <a href="/picture-to-ascii.html" class="mobile-menu-item">Picture to ASCII</a>
+                        <a href="/pictures-to-draw.html" class="mobile-menu-item">Pictures to Draw</a>
+                        <a href="/vectorize-image.html" class="mobile-menu-item">Vectorize Image</a>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-section mobile-menu-lang">
+                        <button type="button" class="mobile-menu-title" aria-expanded="false">Language</button>
+                        <div class="mobile-menu-items">
+                        <a class="mobile-menu-item is-active" href="/" aria-current="true">English</a>
+                        <a class="mobile-menu-item" href="/de-de">Deutsch</a>
+                        <a class="mobile-menu-item" href="/fr-fr">Français</a>
+                        <a class="mobile-menu-item" href="/ja-jp">日本語</a>
+                        <a class="mobile-menu-item" href="/zh-cn">中文</a>
+                        <a class="mobile-menu-item" href="/ko-kr">한국어</a>
+                        <a class="mobile-menu-item" href="/it-it">Italiano</a>
+                        <a class="mobile-menu-item" href="/es-es">Español</a>
+                        <a class="mobile-menu-item" href="/nl-nl">Nederlands</a>
+                        <a class="mobile-menu-item" href="/ru-ru">Русский</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <main>
+            <article class="blog-content" itemscope itemtype="https://schema.org/BlogPosting">
                 <nav class="breadcrumb" aria-label="Breadcrumb">
-                    <a href="https://www.rockimg.com/">ROCKIMG</a> &rsaquo;
-                    <a href="https://slysweb.github.io/RockIMG/blog/">Blog</a> &rsaquo;
+                    <a href="/">ROCKIMG</a> &rsaquo;
+                    <a href="/blog.html">Blog</a> &rsaquo;
                     <span>How to Highlight Text in an Image Online</span>
                 </nav>
 <h1>How to Highlight Text in an Image Online</h1>
-<p>Need to <strong>highlight text in an image</strong>—a screenshot, scanned document, or photo of a sign—without opening Photoshop? When the words are baked into pixels, you cannot select them like editable text. The practical fix is to draw a semi-transparent marker over the area you want to emphasize. ROCKIMG’s free <a href="https://www.rockimg.com/highlight-image.html">Highlight Image</a> tool at <strong>highlight-image.html</strong> lets you <strong>highlight parts of an image</strong> with rectangles, ovals, or freehand shapes, then download the result—all in your browser.</p>
+<p>Need to <strong>highlight text in an image</strong>—a screenshot, scanned document, or photo of a sign—without opening Photoshop? When the words are baked into pixels, you cannot select them like editable text. The practical fix is to draw a semi-transparent marker over the area you want to emphasize. ROCKIMG’s free <a href="/highlight-image.html">Highlight Image</a> tool at <strong>highlight-image.html</strong> lets you <strong>highlight parts of an image</strong> with rectangles, ovals, or freehand shapes, then download the result—all in your browser.</p>
 <p class="publish-date">Published on: June 18, 2026</p>
 
 <figure>
-    <img src="https://www.rockimg.com/public/static/samples/highlighted-image-demo.jpg" alt="Original vintage 1924 sheet music catalog page before highlighting text" loading="lazy" width="1364" height="1815">
+    <img src="/public/static/samples/highlighted-image-demo.jpg" alt="Original vintage 1924 sheet music catalog page before highlighting text" loading="lazy" width="1364" height="1815">
     <figcaption>The original: a public-domain 1924 music catalog page—dense text, mixed fonts, and small print, typical of documents you might mark up.</figcaption>
 </figure>
 
 <figure>
-    <img src="https://www.rockimg.com/public/static/samples/highlighted-image.jpg" alt="Same catalog page with green and pink highlights over key ordering and purchase text" loading="lazy" width="1364" height="1815">
-    <figcaption>After highlighting with <a href="https://www.rockimg.com/highlight-image.html">Highlight Image</a>: semi-transparent rectangles mark the mail-order line (green) and player-piano notice (pink)—text stays readable underneath.</figcaption>
+    <img src="/public/static/samples/highlighted-image.jpg" alt="Same catalog page with green and pink highlights over key ordering and purchase text" loading="lazy" width="1364" height="1815">
+    <figcaption>After highlighting with <a href="/highlight-image.html">Highlight Image</a>: semi-transparent rectangles mark the mail-order line (green) and player-piano notice (pink)—text stays readable underneath.</figcaption>
 </figure>
 
 <div class="cta">
     <p>Mark important text or regions on any image—free, no upload to servers.</p>
-    <a href="https://www.rockimg.com/highlight-image.html" target="_blank" rel="noopener">Try Highlight Image</a>
+    <a href="/highlight-image.html" target="_blank" rel="noopener">Try Highlight Image</a>
 </div>
 
 <h2>Why highlight text inside an image?</h2>
@@ -359,10 +612,10 @@
 
 <h2>Image text vs. real text: what you are highlighting</h2>
 <p>In a Word doc or Google Doc, you select characters and apply a highlighter. In a JPG or PNG, letters are just colored pixels—there is no text layer. To <strong>highlight text in an image</strong>, you overlay a colored shape on top of the word or paragraph. The goal is to mimic a physical highlighter pen: the text stays readable underneath a translucent yellow (or other color) wash.</p>
-<p>ROCKIMG’s <a href="https://www.rockimg.com/highlight-image.html">Highlight Image</a> tool is built for exactly that: draw one or more highlight regions, tune color and opacity, apply, and export.</p>
+<p>ROCKIMG’s <a href="/highlight-image.html">Highlight Image</a> tool is built for exactly that: draw one or more highlight regions, tune color and opacity, apply, and export.</p>
 
 <h2>What the Highlight Image tool offers</h2>
-<p>On <a href="https://www.rockimg.com/highlight-image.html">highlight-image.html</a>, processing runs locally in your browser—files are not stored on ROCKIMG servers. Supported uploads include JPG, PNG, WebP, and other common image formats up to 20&nbsp;MB.</p>
+<p>On <a href="/highlight-image.html">highlight-image.html</a>, processing runs locally in your browser—files are not stored on ROCKIMG servers. Supported uploads include JPG, PNG, WebP, and other common image formats up to 20&nbsp;MB.</p>
 <ul>
     <li><strong>Three draw modes</strong> — <strong>Rectangle</strong> (default, best for lines of text), <strong>Oval</strong> (soft focus on a phrase or icon), and <strong>Freehand</strong> (irregular areas or curved underlines).</li>
     <li><strong>Custom highlight color</strong> — color picker plus quick presets (yellow, red, green, blue, magenta).</li>
@@ -376,7 +629,7 @@
 <h2>Step-by-step: highlight text in an image</h2>
 
 <h3>Step 1: Upload your image</h3>
-<p>Open <a href="https://www.rockimg.com/highlight-image.html">highlight-image.html</a> and drag your screenshot or photo onto the upload zone, or click to browse. The image appears in the editor with highlight controls below it.</p>
+<p>Open <a href="/highlight-image.html">highlight-image.html</a> and drag your screenshot or photo onto the upload zone, or click to browse. The image appears in the editor with highlight controls below it.</p>
 
 <h3>Step 2: Choose a highlight mode</h3>
 <p>Pick the shape that fits your text layout:</p>
@@ -417,9 +670,9 @@
 <h2>Highlight Image vs. other ROCKIMG tools</h2>
 <p>Pick the right tool for your goal:</p>
 <ul>
-    <li><strong><a href="https://www.rockimg.com/highlight-image.html">Highlight Image</a></strong> — semi-transparent color over text or regions; content stays visible.</li>
-    <li><strong><a href="https://www.rockimg.com/annotate-image.html">Annotate Image</a></strong> — arrows, text labels, and shapes for explaining UI flows.</li>
-    <li><strong><a href="https://www.rockimg.com/blur-photo.html">Blur Photo</a></strong> — hide sensitive faces or data instead of emphasizing it.</li>
+    <li><strong><a href="/highlight-image.html">Highlight Image</a></strong> — semi-transparent color over text or regions; content stays visible.</li>
+    <li><strong><a href="/annotate-image.html">Annotate Image</a></strong> — arrows, text labels, and shapes for explaining UI flows.</li>
+    <li><strong><a href="/blur-photo.html">Blur Photo</a></strong> — hide sensitive faces or data instead of emphasizing it.</li>
 </ul>
 <p>When you only need to <strong>highlight parts of an image</strong> that contain text, the dedicated highlight tool is the fastest path.</p>
 
@@ -434,14 +687,48 @@
 </ul>
 
 <h2>Conclusion</h2>
-<p>You cannot select text inside a flat image file, but you can still <strong>highlight text in an image</strong> effectively with the right overlay. ROCKIMG’s <a href="https://www.rockimg.com/highlight-image.html">Highlight Image</a> tool on <strong>highlight-image.html</strong> gives you rectangle, oval, and freehand modes, adjustable color and opacity, multiple marks per file, and local browser processing—no install required.</p>
+<p>You cannot select text inside a flat image file, but you can still <strong>highlight text in an image</strong> effectively with the right overlay. ROCKIMG’s <a href="/highlight-image.html">Highlight Image</a> tool on <strong>highlight-image.html</strong> gives you rectangle, oval, and freehand modes, adjustable color and opacity, multiple marks per file, and local browser processing—no install required.</p>
 
 <div class="cta">
     <p>Highlight text and key areas on your next screenshot.</p>
-    <a href="https://www.rockimg.com/highlight-image.html" target="_blank" rel="noopener">Open Highlight Image</a>
+    <a href="/highlight-image.html" target="_blank" rel="noopener">Open Highlight Image</a>
 </div>
-<p class="back-to-blog" style="margin-top:2.5rem;"><a href="https://slysweb.github.io/RockIMG/blog/">← Back to all tutorials</a></p>
+<p class="back-to-blog" style="margin-top:2.5rem;"><a href="/blog.html">← Back to all tutorials</a></p>
             </article>
-    </main>
+        </main>
+        <footer class="footer">
+            <nav class="footer-nav">
+                <a href="/blog.html">Blog</a>
+                <a href="/tools.html">Tools</a>
+                <a href="/about.html">About Us</a>
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Service</a>
+            </nav>
+            <p>&copy; 2026 ROCKIMG. All rights reserved.</p>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuBtn = document.querySelector('.mobile-menu-btn');
+                const mobileMenu = document.querySelector('.mobile-menu');
+                if (!menuBtn || !mobileMenu) return;
+                function syncMobileMenuScrollLock() {
+                    document.documentElement.classList.toggle('mobile-menu-open', mobileMenu.classList.contains('active'));
+                }
+                menuBtn.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+                    syncMobileMenuScrollLock();
+                });
+                document.addEventListener('click', function(e) {
+                    if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+                        mobileMenu.classList.remove('active');
+                        menuBtn.classList.remove('active');
+                        syncMobileMenuScrollLock();
+                    }
+                });
+            });
+        </script>
+    </div>
+<script defer src="/public/static/mobile-menu-accordion.js"></script>
 </body>
 </html>

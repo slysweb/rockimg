@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Four Forensic Signals That Expose Edited Images | ROCKIMG Blog</title>
+    <meta name="description" content="ELA, clone detection, noise consistency, and EXIF metadata each have blind spots. Learn why four converging forensic signals make a stronger case for edited photos.">
+    <meta name="keywords" content="image forensics,error level analysis,ELA,clone detection,noise consistency,EXIF metadata,detect edited images,image manipulation detection">
+    <meta property="article:published_time" content="2026-08-02">
+    <meta property="og:image" content="https://www.rockimg.com/public/static/samples/detect-image-manipulation-ela.png">
+    <meta name="twitter:image" content="https://www.rockimg.com/public/static/samples/detect-image-manipulation-ela.png">
+    <link rel="canonical" href="https://www.rockimg.com/blog/four-forensic-signals-that-expose-edited-images.html">
+    <meta property="og:title" content="Four Forensic Signals That Expose Edited Images | ROCKIMG Blog">
+    <meta property="og:description" content="Why ELA, clone detection, noise analysis, and metadata alone are unreliable—and how their convergence strengthens image forensics.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.rockimg.com/blog/four-forensic-signals-that-expose-edited-images.html">
+    <meta property="og:site_name" content="ROCKIMG">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Four Forensic Signals That Expose Edited Images">
+    <meta name="twitter:description" content="ELA, clone detection, noise consistency, and EXIF—each fails alone; together they build a stronger case.">
+    <style>
+        body { margin: 0; font-family: Georgia, 'Times New Roman', serif; background: #f7f9fc; color: #333; }
+        main { background: #fff; }
+        .blog-content { max-width: 800px; margin: 0 auto; padding: 28px 20px 48px; line-height: 1.7; }
+        .blog-content h1 { font-size: 2.2rem; margin-bottom: 0.5rem; color: #1a1a2e; font-family: system-ui, sans-serif; }
+        .blog-content h2 { font-size: 1.65rem; margin-top: 2.2rem; margin-bottom: 0.9rem; color: #0056b3; font-family: system-ui, sans-serif; }
+        .blog-content h3 { font-size: 1.25rem; margin-top: 1.6rem; margin-bottom: 0.6rem; color: #333; font-family: system-ui, sans-serif; }
+        .blog-content p { margin-bottom: 1rem; font-size: 1.05rem; color: #444; }
+        .blog-content ul, .blog-content ol { margin-bottom: 1.4rem; padding-left: 1.8rem; }
+        .blog-content li { margin-bottom: 0.55rem; font-size: 1.05rem; color: #444; }
+        .blog-content a { color: #0056b3; }
+        .blog-content img { max-width: 100%; height: auto; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,.12); display: block; }
+        .blog-content figure { margin: 1.5rem 0; }
+        .blog-content figcaption { font-size: 0.9rem; color: #777; text-align: center; margin-top: -0.5rem; }
+        .publish-date { color: #888; font-size: 0.9rem; margin-bottom: 1.6rem; }
+        .blog-content .table-scroll { overflow-x: auto; margin: 1.5rem 0 1.75rem; -webkit-overflow-scrolling: touch; }
+        .blog-content .format-comparison-table { width: 100%; min-width: 640px; border-collapse: collapse; font-size: 0.98rem; }
+        .blog-content .format-comparison-table th,
+        .blog-content .format-comparison-table td { border: 1px solid #dbeafe; padding: 0.75rem 0.85rem; vertical-align: top; text-align: left; }
+        .blog-content .format-comparison-table thead th { background: #eef5ff; color: #1f3c88; font-weight: 600; }
+        .blog-content .format-comparison-table tbody th[scope="row"] { background: #f8fbff; color: #1f3c88; white-space: nowrap; }
+        .blog-content .format-comparison-table tbody tr:nth-child(even) td { background: #fcfdff; }
+        .blog-content .back-to-blog a { font-weight: 500; text-decoration: none; }
+        @media (max-width: 768px) {
+            .blog-content { padding: 18px 15px 36px; }
+            .blog-content h1 { font-size: 1.85rem; }
+            .blog-content h2 { font-size: 1.4rem; }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Four Forensic Signals That Expose Edited Images",
+      "description": "Why ELA, clone detection, noise consistency, and EXIF metadata each have blind spots—and why converging forensic signals make a stronger case for edited images.",
+      "image": "https://www.rockimg.com/public/static/samples/detect-image-manipulation-ela.png",
+      "url": "https://www.rockimg.com/blog/four-forensic-signals-that-expose-edited-images.html",
+      "datePublished": "2026-08-02",
+      "dateModified": "2026-08-02",
+      "author": {
+        "@type": "Organization",
+        "name": "ROCKIMG",
+        "url": "https://www.rockimg.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ROCKIMG",
+        "url": "https://www.rockimg.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.rockimg.com/public/static/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.rockimg.com/blog/four-forensic-signals-that-expose-edited-images.html"
+      },
+      "keywords": "image forensics, error level analysis, clone detection, noise consistency, EXIF metadata"
+    }
+    </script>
+</head>
+<body>
+    <main>
+        <article class="blog-content" itemscope itemtype="https://schema.org/BlogPosting">
+<h1>Four Forensic Signals That Expose Edited Images</h1>
+<p>One bright patch in an Error Level Analysis scan does not prove a photo was doctored. Neither does a matching block pair in clone detection, an odd noise profile, or a missing EXIF tag. Each of those signals has a specific failure mode that makes it unreliable on its own. The proof is in convergence: when all four forensic techniques point at the same region of an image, the case goes from interesting to strong.</p>
+<p>This is an article for rockimg.com that walks through each technique, explains exactly where it breaks down, and shows why combining them is the only approach that holds up.</p>
+<p class="publish-date">Published on: August 2, 2026</p>
+ <h2>How Editing Leaves Traces</h2>
+<p>Editing software alters a photo in ways that go beyond what the eye can see. Re-saving a JPEG changes its compression history. Cloning a texture duplicates pixel blocks that would never repeat naturally. Compositing elements from two cameras disrupts noise patterns at the boundary. And the software itself often stamps its name into the file's metadata. Each type of edit leaves a different kind of fingerprint, which is why four independent signals are needed to cover the ground.</p>
+ <h2>Error Level Analysis: The Compression Fingerprint</h2>
+<p>Every time a JPEG is saved, the encoder cuts the image into 8x8 pixel blocks, transforms each block into frequency values, divides those values by a quality table, and rounds. That rounding is permanent. In an untouched photo, every region has been through this process the same number of times at the same settings, so the entire frame settles at a similar error level.</p>
+<p>Paste content from another image and save again. The pasted region carries a different compression history. An ELA tool re-compresses the image at a known quality and maps the difference between the original and the re-saved version. Regions that glow brighter than their surroundings have been through fewer rounds of compression, or different settings, than the rest of the frame.</p>
+<p><strong>Where ELA breaks down.</strong> ELA on a PNG or a fresh maximum-quality JPEG export will look bright everywhere, because there is almost no compression history to compare against. Natural contrast differences (a bright sky next to a detailed treeline) also shift error levels without any manipulation involved. Treat ELA as a reason to investigate further, not as a verdict.</p>
+ <h2>Clone Detection: Matching Block Fingerprints</h2>
+<p>A common manipulation technique: copy one part of an image and paste it over another to hide or duplicate an object. Clone detection algorithms divide the image into overlapping blocks, compute a fingerprint for each block, and then sort those fingerprints to find near-identical matches in different parts of the frame. Tools like <a href="https://29a.ch/photo-forensics/" target="_blank" rel="noopener noreferrer">Forensically</a> mark similar regions in blue and connect them with a red line; when many regions overlap, the result can appear white.</p>
+<p><strong>Where clone detection breaks down.</strong> Large uniform areas (clear skies, white walls, solid backgrounds) will produce matching blocks by nature. Clone detection works best on images with varied texture and detail, where a genuine duplicate stands out from the surrounding content. A sky full of blue matches tells you nothing.</p>
+ <h2>Noise Consistency: Different Cameras, Different Grain</h2>
+<p>Every camera sensor produces a characteristic noise pattern. The grain in a phone photo at ISO 800 looks different from the grain in a studio shot at ISO 100. When someone composites elements from two different source images, the noise profile changes at the boundary.</p>
+<p>Noise analysis tools isolate the noise using a separable median filter. This can reveal airbrushing, deformations, warping, and perspective-corrected cloning. A related technique, noise naturalness mapping, measures the kurtosis of the noise distribution. Real camera noise follows specific statistical patterns, while AI-generated images often produce noise with lower kurtosis values, which a naturalness map renders in red. Regions matching natural photo statistics appear green.</p>
+<p><strong>Where noise analysis breaks down.</strong> It works best on high-resolution images. Smaller images tend to contain too little information for meaningful measurement. A low-resolution crop will not give you a reliable noise profile.</p>
+ <h2>Metadata Forensics: What the File Header Reveals</h2>
+<p>A photo straight from a camera typically includes the camera make and model, lens information, shutter speed, aperture, ISO, GPS coordinates, and a timestamp. Software like Photoshop, GIMP, or Lightroom writes its own signature into the metadata when it saves a file. A photo that claims to be an unedited original but carries an editing software tag has been through an editor.</p>
+<p><strong>Where metadata breaks down.</strong> Missing metadata is not evidence of tampering on its own. Stripping EXIF is common for privacy reasons, and plenty of legitimate workflows remove it. Metadata can also be spoofed. On its own, a stripped file header proves nothing. Combined with suspicious ELA or noise results, it adds weight.</p>
+ <h2>The Blind Spot Table</h2>
+<div class="table-scroll">
+    <table class="format-comparison-table">
+        <thead>
+            <tr>
+                <th scope="col">Technique</th>
+                <th scope="col">What It Catches</th>
+                <th scope="col">Blind Spot</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">ELA</th>
+                <td>Regions with mismatched compression history</td>
+                <td>PNGs and max-quality JPEGs look uniformly bright; natural contrast shifts mimic edits</td>
+            </tr>
+            <tr>
+                <th scope="row">Clone Detection</th>
+                <td>Copy-pasted textures, stamp-cloned areas</td>
+                <td>Uniform regions (skies, walls) produce false matches</td>
+            </tr>
+            <tr>
+                <th scope="row">Noise Analysis</th>
+                <td>Composites from different cameras, AI-generated content</td>
+                <td>Low-resolution images lack enough data for reliable measurement</td>
+            </tr>
+            <tr>
+                <th scope="row">EXIF Metadata</th>
+                <td>Editor software tags, inconsistent timestamps</td>
+                <td>Metadata can be stripped or spoofed intentionally</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>No single row in this table gives you a definitive answer. Each technique's blind spot is wide enough to drive a false positive through.</p>
+ <h2>Convergence: When All Four Agree</h2>
+<p>The case becomes strong when the signals stack. ELA highlights a region with anomalous compression history. Clone detection finds duplicated blocks in that same area. Noise analysis shows a different grain profile at the boundary. And the file's metadata carries an editing software tag where the sender claimed the photo was untouched.</p>
+<p>That convergence is hard to fake, because an image manipulator would need to defeat four independent detection methods simultaneously. The absence of any single signal does not clear the image, and the presence of any single signal does not condemn it. The question is always whether the signals agree.</p>
+<p>You can run all four analyses in a browser with a single upload. The analysis runs locally in JavaScript and the HTML5 Canvas API, so the image never leaves your machine. Drag in a JPG, PNG, WebP, or BMP, wait a few seconds, and review each tab. ROCKIMG's <a href="https://www.rockimg.com/blog/how-to-detect-if-an-image-has-been-manipulated.html">image manipulation detector</a> supports ELA, clone detection, noise consistency, and metadata extraction in one interface.</p>
+<p>One important framing to keep in mind: these tools function as a magnifying glass for images. They reveal details that would otherwise be hidden, but they cannot by themselves determine whether a manipulation was deceptive. Extraordinary claims require extraordinary evidence, and a single bright ELA patch is not extraordinary evidence. Four converging signals, though, start to look like it.</p>
+ <p class="back-to-blog" style="margin-top:2.5rem;"><a href="https://www.rockimg.com/blog.html">← Back to all tutorials</a></p>
+
+        </article>
+    </main>
+</body>
+</html>

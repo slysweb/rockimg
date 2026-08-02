@@ -14,6 +14,7 @@ Each row is a **real ROCKIMG app page** plus the **article that documents or tea
 | ----------------- | --------------- |
 | [Add Noise](https://www.rockimg.com/add-noise.html) | [How to add noise to an image (Gaussian noise, grain, texture)](https://www.rockimg.com/blog/how-to-add-noise-to-an-image-online.html) |
 | [Adjust Image Brightness](https://www.rockimg.com/adjust-image-brightness.html), [Adjust Image Contrast](https://www.rockimg.com/adjust-image-contrast.html) | [How to adjust image brightness and contrast online](https://www.rockimg.com/blog/how-to-adjust-image-brightness-and-contrast-online.html) |
+| [Add GIF to Image](https://www.rockimg.com/add-gif-to-image.html) | [How to add a GIF to a static image](https://www.rockimg.com/blog/how-to-add-gif-to-image.html) |
 | [Add Text to GIF](https://www.rockimg.com/add-text-to-gif.html) | [How to add text to a GIF](https://www.rockimg.com/blog/how-to-add-text-to-gif.html) |
 | [Annotate Image](https://www.rockimg.com/annotate-image.html) | [How to annotate images online (shapes, arrows, text)](https://www.rockimg.com/blog/how-to-annotate-images-online.html) |
 | [Beauty Filter](https://www.rockimg.com/beauty-filter.html) | [Beauty filter online: smooth skin, portraits, face beauty ratio](https://www.rockimg.com/blog/beauty-filter-online-smooth-skin-portrait-guide.html) |
