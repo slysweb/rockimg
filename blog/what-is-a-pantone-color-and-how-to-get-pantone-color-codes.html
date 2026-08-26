@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>What Is a Pantone Color &amp; How to Get Color Codes | ROCKIMG Blog</title>
+    <meta name="description" content="Learn what Pantone colors are, how PMS C/U and FHI codes work, and how to extract approximate swatches from any image in your browser.">
+    <meta name="keywords" content="Pantone color,what is a Pantone color,Pantone color codes,PMS,Pantone Matching System,how to get Pantone color codes,Pantone swatches from image">
+    <meta property="article:published_time" content="2026-08-26">
+    <meta property="og:image" content="https://www.rockimg.com/public/static/samples/pantone-color-swatches-sheet.png">
+    <meta name="twitter:image" content="https://www.rockimg.com/public/static/samples/pantone-color-swatches-sheet.png">
+    <link rel="canonical" href="https://www.rockimg.com/blog/what-is-a-pantone-color-and-how-to-get-pantone-color-codes.html">
+    <meta property="og:title" content="What Is a Pantone Color &amp; How to Get Color Codes | ROCKIMG Blog">
+    <meta property="og:description" content="What Pantone colors are, how PMS and FHI codes work, and how to pull approximate swatches from a photo in your browser.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.rockimg.com/blog/what-is-a-pantone-color-and-how-to-get-pantone-color-codes.html">
+    <meta property="og:site_name" content="ROCKIMG">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="What Is a Pantone Color and How to Get Color Codes">
+    <meta name="twitter:description" content="PMS vs FHI, physical guides vs screen HEX, and how to extract approximate Pantone-style swatches online.">
+    <style>
+        body {
+            margin: 0;
+            font: 16px/1.7 Georgia, "Times New Roman", serif;
+            color: #333;
+            background: #fff;
+        }
+        .blog-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .blog-content h1 {
+            font-size: 2.4rem;
+            margin-bottom: 0.5rem;
+            color: #1a1a2e;
+        }
+        .blog-content h2 {
+            font-size: 1.75rem;
+            margin-top: 2.2rem;
+            margin-bottom: 0.9rem;
+            color: #0056b3;
+        }
+        .blog-content h3 {
+            font-size: 1.3rem;
+            margin-top: 1.6rem;
+            margin-bottom: 0.6rem;
+            color: #333;
+        }
+        .blog-content p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+            color: #444;
+        }
+        .blog-content ul, .blog-content ol {
+            margin-bottom: 1.4rem;
+            padding-left: 1.8rem;
+        }
+        .blog-content li {
+            margin-bottom: 0.55rem;
+            font-size: 1.05rem;
+            color: #444;
+        }
+        .blog-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 1.5rem auto;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+            display: block;
+        }
+        .blog-content figure { margin: 1.5rem 0; }
+        .blog-content figcaption {
+            font-size: 0.9rem;
+            color: #777;
+            text-align: center;
+            margin-top: -0.5rem;
+        }
+        .blog-content code {
+            padding: 0.12rem 0.4rem;
+            background: #f1f5f9;
+            border-radius: 4px;
+            font-size: 0.92em;
+            color: #c0392b;
+        }
+        .publish-date {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 1.6rem;
+        }
+        .blog-content .tip {
+            background-color: #e8f4fd;
+            border-left: 4px solid #2196f3;
+            padding: 14px 16px;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .blog-content .tip p { margin: 0; font-size: 1rem; }
+        .blog-content .example-box {
+            background: #f7fbff;
+            border: 1px solid #d8ebff;
+            border-left: 4px solid #4a90e2;
+            border-radius: 8px;
+            padding: 14px 16px;
+            margin: 14px 0;
+        }
+        .blog-content .cta {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1.6rem;
+            background: linear-gradient(135deg, #f0f8ff 0%, #e8f4fd 100%);
+            border-radius: 10px;
+            border: 1px solid #d0e8f8;
+        }
+        .blog-content .cta p {
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+            color: #333;
+        }
+        .blog-content .cta a {
+            display: inline-block;
+            padding: 11px 26px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+        .blog-content .back-to-blog a {
+            font-weight: 500;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .blog-content { padding: 15px; }
+            .blog-content h1 { font-size: 1.9rem; }
+            .blog-content h2 { font-size: 1.45rem; }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Understanding Pantone Colors: What Is a Pantone Color and How to Get Pantone Color Codes",
+      "description": "Learn what Pantone colors are, how PMS and FHI codes work, and how to extract approximate Pantone-style swatches from any image with ROCKIMG.",
+      "url": "https://www.rockimg.com/blog/what-is-a-pantone-color-and-how-to-get-pantone-color-codes.html",
+      "datePublished": "2026-08-26",
+      "dateModified": "2026-08-26",
+      "image": "https://www.rockimg.com/public/static/samples/pantone-color-swatches-sheet.png",
+      "author": {
+        "@type": "Organization",
+        "name": "ROCKIMG",
+        "url": "https://www.rockimg.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ROCKIMG",
+        "url": "https://www.rockimg.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.rockimg.com/public/static/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.rockimg.com/blog/what-is-a-pantone-color-and-how-to-get-pantone-color-codes.html"
+      },
+      "keywords": "Pantone color, Pantone color codes, PMS, Pantone Matching System"
+    }
+    </script>
+</head>
+<body>
+    <main>
+        <article class="blog-content">
+<h1>Understanding Pantone Colors: What Is a Pantone Color and How to Get Pantone Color Codes</h1>
+<p>A <strong>Pantone color</strong> is a numbered, formula-backed chip in the Pantone Matching System (PMS)—a shared language so a printer in one country and a mill in another can aim at the same red. Screens still show RGB and HEX simulations; production still needs a physical guide. For mood boards and first-pass palettes, ROCKIMG’s free <a href="https://www.rockimg.com/pantone-color-swatches.html">Pantone Color Swatches</a> tool pulls dominant hues from any image and maps them to approximate coated-style codes in your browser. Nothing is uploaded.</p>
+<p class="publish-date">Published on: August 26, 2026</p>
+
+<figure>
+    <img src="https://www.rockimg.com/public/static/samples/pantone-color-origin.jpg" alt="Overhead product still life with coral lipstick, navy fabric, sage box, cream mug, gold chain, and peach ribbon" loading="lazy" width="1200" height="900">
+    <figcaption>A typical source photo: mixed product colors that you might want to turn into a named palette.</figcaption>
+</figure>
+
+<figure>
+    <img src="https://www.rockimg.com/public/static/samples/pantone-color-swatches-sheet.png" alt="Downloadable Pantone-style swatch sheet with six approximate coated color chips, codes, and HEX values" loading="lazy" width="788" height="756">
+    <figcaption>Approximate coated matches from that still life—codes plus HEX, ready to copy or download as a PNG sheet.</figcaption>
+</figure>
+
+<div class="cta">
+    <p>Pull a palette from your own photo?</p>
+    <a href="https://www.rockimg.com/pantone-color-swatches.html" target="_blank" rel="noopener noreferrer">Open Pantone Color Swatches</a>
+</div>
+
+<h2>What is a Pantone color?</h2>
+<p>Each Pantone number points to a fixed ink or dye formula. You send a code; a press or dye house mixes to that recipe instead of guessing from a JPEG.</p>
+<p>Pantone LLC built the system to stop “your red / my red” fights in print. Graphic arts chips carry suffixes such as <strong>C</strong> (coated paper) and <strong>U</strong> (uncoated). Fashion, Home + Interiors chips use marks like <strong>TCX</strong> (cotton) and <strong>TPG</strong> (paper for interiors). Same family of numbers, different substrates—do not swap a C chip for a TCX dye lot and expect a match.</p>
+<p>On a monitor you only see an RGB stand-in. Two calibrated displays can still disagree. For brand books, packaging, and apparel sampling, the physical fan deck is the contract. Pantone also names a Color of the Year; that is a marketing and trend cue, not a substitute for specifying a production code.</p>
+
+<h2>Graphic Arts vs Fashion, Home + Interiors</h2>
+<p>Graphic Arts (classic PMS) is for print and logos. FHI is for textiles and interiors. Read the suffix before you quote a number to a vendor.</p>
+<figure>
+    <img src="https://www.rockimg.com/public/static/samples/pantone-color-systems.png" alt="Diagram comparing Graphic Arts PMS codes with C and U suffixes to Fashion Home Interiors TCX and TPG codes" loading="lazy" width="1200" height="560">
+    <figcaption>Same idea, different jobs: C/U for paper; TCX/TPG for fabric and home surfaces.</figcaption>
+</figure>
+<p><strong>PANTONE 185 C</strong> is a common example in packaging and logo work: coated stock, glossy ink. The uncoated sibling, <strong>185 U</strong>, sits on a more absorbent sheet and looks slightly duller. Neither is a fabric standard. A mill asking for cotton will want an FHI TCX reference, not a C chip photographed on your phone.</p>
+<p>If you only have a HEX from a website, you still have not specified a Pantone color. HEX is a screen recipe. You can hunt a nearby chip for inspiration, then confirm on a fan deck under the lighting your printer actually uses.</p>
+
+<h2>How to get Pantone color codes</h2>
+<p>Buy or borrow a current physical guide for production. Use Pantone Connect or Adobe libraries for drafting. Use an image extractor when you need a fast, unofficial shortlist from a photo.</p>
+
+<h3>Physical color guides</h3>
+<p>Official printed books remain the first choice for press checks and fabric labs. They fade, so shops replace them on a schedule. Cost is the tradeoff: one Solid Coated book already covers most logo work; fashion teams add FHI cotton decks. If a client signs off on a chip, write that exact code—including suffix—into the spec sheet.</p>
+
+<h3>Pantone Connect</h3>
+<p>Pantone’s official digital lookup sits behind an account. Designers use it to search names, convert between libraries, and drop chips into Adobe apps. Some libraries need a paid seat. Even then, the pixels on screen are still a preview. Connect does not replace a fan deck at the press.</p>
+
+<h3>Adobe Illustrator and Photoshop libraries</h3>
+<p>Illustrator and Photoshop ship with Pantone books in the swatches panel. Handy when you are drawing a logo or mockup. Treat those swatches as a drafting aid. Exporting a PDF with a named spot color is not the same as a lab-matched drawdown.</p>
+
+<h3>Online image extraction (inspiration only)</h3>
+<p>When the brief is a photo—packaging on a shelf, a mood-board JPEG, a garment shot—you often want “what chips sit near these pixels?” That is a clustering problem, not a licensed conversion. ROCKIMG’s <a href="https://www.rockimg.com/pantone-color-swatches.html">Pantone Color Swatches from Any Image</a> does that locally: dominant colors in, nearest coated-style matches out, HEX copy and a PNG sheet. Pair it with <a href="https://www.rockimg.com/image-color.html">Get Image Color</a> if you only need a single pixel’s RGB/HEX without a Pantone-style label.</p>
+
+<div class="tip">
+    <p><strong>Disclaimer:</strong> ROCKIMG is not affiliated with Pantone LLC. Generated codes are algorithm approximations for design inspiration. Do not send them to a printer or mill as a production spec. Always verify against a physical Pantone guide. Pantone® is a trademark of Pantone LLC.</p>
+</div>
+
+<h2>How to extract approximate Pantone swatches from a photo</h2>
+<p>Upload a JPG, PNG, WebP, or GIF, set <strong>Swatches</strong> to 4–12, click <strong>Create</strong>, then copy HEX or download the sheet. The path is <a href="https://www.rockimg.com/pantone-color-swatches.html">pantone-color-swatches.html</a>—no account.</p>
+
+<h3>Step 1: Open the tool and drop an image</h3>
+<p>Use the drop zone or click to pick a file. Processing stays in the browser; a refresh clears the file. Photos with distinct color regions (product packs, apparel flats, interiors) cluster more cleanly than busy street scenes.</p>
+
+<h3>Step 2: Choose how many chips you want</h3>
+<p>The <strong>Swatches</strong> menu sits on the same row as <strong>Create</strong>. Four chips suit a tight brand lockup. Six is a solid mood-board default. Ten or twelve help when a photo mixes neutrals plus accents—but extra slots can split one hue into near-duplicates. Start at 6, then bump the count only if a color you care about is missing.</p>
+
+<h3>Step 3: Create the palette</h3>
+<p>Click <strong>Create</strong>. The result card fills with chips: a color block, an approximate code (coated-style naming), a short name, and a HEX value. The empty-state line—“Your Pantone-style swatches will appear here after you create them.”—goes away once the grid is ready.</p>
+
+<figure>
+    <img src="https://www.rockimg.com/public/static/samples/pantone-color-swatch-cards.png" alt="Three Pantone-style swatch cards showing color blocks, PANTONE codes, names, and HEX values with click to copy" loading="lazy" width="748" height="328">
+    <figcaption>Each card is clickable: one tap copies the HEX for Illustrator, Figma, or CSS.</figcaption>
+</figure>
+
+<h3>Step 4: Copy HEX or download the sheet</h3>
+<p>Click a card to copy its HEX (you will see a short “Copied!” toast). Use <strong>Download</strong> for a PNG palette titled after the tool, useful in decks and client emails. Keep the original photo; this match is a starting map, not a press proof.</p>
+
+<div class="example-box">
+    <p><strong>Need a flat fill next?</strong> Drop a copied HEX into <a href="https://www.rockimg.com/solid-background-creator.html">Solid Background Creator</a> to mock a pack panel or slide background in the same session.</p>
+</div>
+
+<h2>Screen RGB vs print reality</h2>
+<p>HEX and RGB describe light. Pantone formulas describe ink or dye on a specific substrate. A close HEX is still not a licensed match.</p>
+<p>Uncoated paper drinks ink; coated paper sits on top. Cotton takes dye differently from polyester. Lighting at the press (D50 vs office LEDs) shifts what you think you approved. That is why shops insist on a current fan deck and, for critical jobs, a press proof or lab dip.</p>
+<p>Use the online extractor to narrow the conversation—“these six chips are in the neighborhood of this photo”—then walk the client to the physical book. If the job is accessibility rather than brand ink, a simulator such as the site’s color-blindness tool is a separate check and does not replace a Pantone spec.</p>
+
+<h2>When this workflow helps—and when it does not</h2>
+<p>It helps for mood boards, competitor palettes, and early art direction. It does not replace a signed chip for manufacturing.</p>
+<ul>
+    <li><strong>Good fit:</strong> packaging photos, garment flats, interior stills, logo screenshots you want to explore as a shortlist.</li>
+    <li><strong>Weak fit:</strong> neon night photos, heavy gradients, and files already crushed by social-app compression—clusters get muddy.</li>
+    <li><strong>Never skip:</strong> legal brand manuals that already list official Pantone numbers. Do not “re-extract” a logo and override the brand book.</li>
+    <li><strong>Privacy:</strong> the ROCKIMG tool never sends the image to a server. Closing or refreshing the tab drops the pixels.</li>
+</ul>
+
+<div class="cta">
+    <p>Extract approximate Pantone-style swatches from an image—free, local, in your browser.</p>
+    <a href="https://www.rockimg.com/pantone-color-swatches.html" target="_blank" rel="noopener noreferrer">Open Pantone Color Swatches</a>
+</div>
+<p class="back-to-blog"><a href="https://www.rockimg.com/blog.html">← Back to all tutorials</a></p>
+
+        </article>
+    </main>
+</body>
+</html>
